@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Contact — Barker Brothers Benefits</title>
+<meta name="description" content="Contact Barker Brothers Benefits for a free employee benefits quote. Minnesota small business benefits consultants."/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:start;max-width:1100px;margin:0 auto;}
+.contact-info h3{font-family:var(--font-heading);color:var(--gray-900);font-size:1.8rem;margin-bottom:18px;}
+.contact-info p{color:var(--gray-700);margin-bottom:26px;font-size:15px;}
+.contact-block{display:flex;gap:16px;margin-bottom:22px;}
+.contact-block .ico{width:44px;height:44px;background:var(--cream);color:var(--maroon);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:18px;flex-shrink:0;}
+.contact-block h5{font-family:var(--font-heading);color:var(--gray-900);font-size:15px;margin-bottom:2px;}
+.contact-block p{color:var(--gray-700);font-size:14px;margin:0;}
+.contact-form{background:var(--white);border-radius:var(--radius-lg);padding:40px;box-shadow:var(--shadow);border:1px solid var(--gray-200);}
+.contact-form .form-submit{width:100%;background:var(--maroon);color:var(--white);padding:16px;border:none;border-radius:var(--radius);font-family:var(--font-body);font-weight:600;font-size:15px;cursor:pointer;transition:var(--transition);margin-top:6px;}
+.contact-form .form-submit:hover{background:var(--maroon-dark);transform:translateY(-1px);box-shadow:0 8px 20px rgba(139,26,26,0.25);}
+@media(max-width:960px){.contact-grid{grid-template-columns:1fr;gap:40px;}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Barker Brothers Benefits"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="why-us.html">Why Us</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li class="has-dropdown">
+        <a href="#">Portals</a>
+        <ul class="dropdown">
+          <li><a href="portal-agent.html"><strong>Agent Portal</strong><small>For BBB agents</small></a></li>
+          <li><a href="portal-member.html"><strong>Member Portal</strong><small>For employees</small></a></li>
+          <li><a href="portal-owner.html"><strong>Owner Portal</strong><small>For business owners</small></a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="nav-cta active">Get a Quote</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="hero-eyebrow">Get Started</div>
+    <h1>Request a <em>free quote.</em></h1>
+    <p>Tell us about your business and we'll get back to you within one business day.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>Let's talk benefits.</h3>
+      <p>No pressure, no obligation. A quick conversation to understand your needs and show you what's possible.</p>
+      <div class="contact-block">
+        <div class="ico">✉</div>
+        <div><h5>Email</h5><p>matt@barkerbb.com</p></div>
+      </div>
+      <div class="contact-block">
+        <div class="ico">☎</div>
+        <div><h5>Phone</h5><p>Call to schedule your consultation</p></div>
+      </div>
+      <div class="contact-block">
+        <div class="ico">◎</div>
+        <div><h5>Service Area</h5><p>Twin Cities &amp; Minnesota statewide</p></div>
+      </div>
+      <div class="contact-block">
+        <div class="ico">⏱</div>
+        <div><h5>Response Time</h5><p>Within 1 business day, guaranteed</p></div>
+      </div>
+    </div>
+    <form class="contact-form" action="https://formsubmit.co/matt@barkerbb.com" method="POST">
+      <input type="hidden" name="_subject" value="New Quote Request — barkerbb.com"/>
+      <input type="hidden" name="_captcha" value="false"/>
+      <div class="form-row">
+        <div class="form-field"><label>First Name *</label><input type="text" name="First Name" required/></div>
+        <div class="form-field"><label>Last Name *</label><input type="text" name="Last Name" required/></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label>Email *</label><input type="email" name="Email" required/></div>
+        <div class="form-field"><label>Phone</label><input type="tel" name="Phone"/></div>
+      </div>
+      <div class="form-row">
+        <div class="form-field"><label>Company Name</label><input type="text" name="Company"/></div>
+        <div class="form-field"><label># of Employees</label>
+          <select name="Employees"><option>1-5</option><option>6-10</option><option>11-25</option><option>26-50</option><option>51-100</option><option>100+</option></select>
+        </div>
+      </div>
+      <div class="form-field full"><label>What are you interested in?</label>
+        <select name="Interest"><option>Group Health Insurance</option><option>Dental &amp; Vision</option><option>Disability &amp; Life</option><option>Supplemental / Aflac</option><option>Enrollment &amp; HR Tech</option><option>Compliance Help</option><option>Full Benefits Review</option><option>Not Sure — Let's Talk</option></select>
+      </div>
+      <div class="form-field full"><label>Tell us about your business</label><textarea name="Message" placeholder="Current situation, goals, timeline..."></textarea></div>
+      <button type="submit" class="form-submit">Send Quote Request →</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo-light.png" alt="Barker Brothers Benefits"/>
+        <p>Taking the hassle out of employee benefits for Minnesota small businesses. Independent. Local. Responsive.</p>
+      </div>
+      <div><h5>Company</h5><ul><li><a href="why-us.html">Why BBB</a></li><li><a href="team.html">Our Team</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5>Services</h5><ul><li><a href="services.html">Group Health</a></li><li><a href="services.html">Dental &amp; Vision</a></li><li><a href="services.html">Life &amp; Disability</a></li><li><a href="services.html">Aflac Supplemental</a></li><li><a href="services.html">Compliance</a></li></ul></div>
+      <div><h5>Portals</h5><ul><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="portal-member.html">Member Portal</a></li><li><a href="portal-owner.html">Owner Portal</a></li><li><a href="contact.html">Get a Quote</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Barker Brothers Benefits. All rights reserved.</div>
+      <div class="powered-by">Powered by <span>Elite</span></div>
+      <div>Licensed Insurance Agency | Serving Minnesota</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

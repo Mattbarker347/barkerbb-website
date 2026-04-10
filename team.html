@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Our Team — Barker Brothers Benefits</title>
+<meta name="description" content="Meet Matt and Josh Barker — the brothers behind Barker Brothers Benefits."/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:1000px;margin:0 auto;}
+.team-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--gray-200);}
+.team-photo{height:280px;background:linear-gradient(135deg,var(--maroon) 0%,var(--maroon-dark) 100%);display:flex;align-items:center;justify-content:center;color:var(--white);font-family:var(--font-heading);font-size:4.5rem;position:relative;overflow:hidden;}
+.team-photo::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(200,168,78,0.2) 0%,transparent 60%);}
+.team-info{padding:36px;}
+.team-info h4{font-family:var(--font-heading);color:var(--gray-900);font-size:1.55rem;margin-bottom:4px;}
+.team-info .role{color:var(--maroon);font-weight:600;font-size:13px;margin-bottom:18px;text-transform:uppercase;letter-spacing:1.5px;}
+.team-info p{color:var(--gray-700);font-size:14.5px;line-height:1.75;margin-bottom:14px;}
+.team-story{background:var(--cream);padding:80px 28px;}
+.team-story-inner{max-width:820px;margin:0 auto;text-align:center;}
+.team-story h2{font-family:var(--font-heading);color:var(--gray-900);font-size:2rem;margin-bottom:22px;}
+.team-story h2 em{font-style:italic;color:var(--maroon);}
+.team-story p{color:var(--gray-700);font-size:1.05rem;line-height:1.8;margin-bottom:18px;}
+@media(max-width:960px){.team-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="Barker Brothers Benefits"/>
+    </a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="why-us.html">Why Us</a></li>
+      <li><a href="team.html" class="active">Team</a></li>
+      <li class="has-dropdown">
+        <a href="#">Portals</a>
+        <ul class="dropdown">
+          <li><a href="portal-agent.html"><strong>Agent Portal</strong><small>For BBB agents</small></a></li>
+          <li><a href="portal-member.html"><strong>Member Portal</strong><small>For employees</small></a></li>
+          <li><a href="portal-owner.html"><strong>Owner Portal</strong><small>For business owners</small></a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-inner">
+    <div class="hero-eyebrow">Meet the Team</div>
+    <h1>The <em>Barker Brothers.</em></h1>
+    <p>Two brothers, one mission: make employee benefits simple for Minnesota small businesses.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-inner">
+    <div class="team-grid">
+      <div class="team-card">
+        <div class="team-photo">MB</div>
+        <div class="team-info">
+          <h4>Matt Barker</h4>
+          <div class="role">Co-Founder &amp; Principal</div>
+          <p>Matt brings years of experience in employee benefits consulting, specializing in helping small businesses navigate the complexities of health insurance, compliance, and employee engagement.</p>
+          <p>His focus is on building long-term relationships with clients and delivering personalized service that large firms simply can't match. If you're a BBB client, Matt is likely your primary point of contact — and the person answering your call.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <div class="team-photo">JB</div>
+        <div class="team-info">
+          <h4>Josh Barker</h4>
+          <div class="role">Co-Founder &amp; Principal</div>
+          <p>Josh's expertise lies in strategic plan design, carrier negotiations, and supplemental coverage. He's the one who knows which carriers are aggressive this quarter and how to structure a plan that fits.</p>
+          <p>He's passionate about educating employees so they actually understand and use their benefits — ensuring businesses get the full value from what they offer their teams.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="team-story">
+  <div class="team-story-inner">
+    <div class="section-eyebrow">Our Story</div>
+    <h2>Built on <em>handshakes and phone calls.</em></h2>
+    <p>We started Barker Brothers Benefits because we saw too many small businesses getting lost in the shuffle at big brokerage firms — treated like small accounts while Fortune 500 clients got the attention.</p>
+    <p>We wanted to build something different: an agency where the owners actually answer the phone, where employees have a real person to call, and where "benefits admin" stops being a burden on the business owner.</p>
+    <p>Today, we serve Minnesota companies across industries — from manufacturers to contractors to service businesses — with the same core promise: take the hassle off their plate.</p>
+  </div>
+</section>
+
+<section class="cta-strip">
+  <h2>Want to <em>meet us?</em></h2>
+  <p>Schedule a free 30-minute consultation — no obligation, just a conversation.</p>
+  <a href="contact.html" class="btn btn-primary">Schedule a Call →</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo-light.png" alt="Barker Brothers Benefits"/>
+        <p>Taking the hassle out of employee benefits for Minnesota small businesses. Independent. Local. Responsive.</p>
+      </div>
+      <div><h5>Company</h5><ul><li><a href="why-us.html">Why BBB</a></li><li><a href="team.html">Our Team</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5>Services</h5><ul><li><a href="services.html">Group Health</a></li><li><a href="services.html">Dental &amp; Vision</a></li><li><a href="services.html">Life &amp; Disability</a></li><li><a href="services.html">Aflac Supplemental</a></li><li><a href="services.html">Compliance</a></li></ul></div>
+      <div><h5>Portals</h5><ul><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="portal-member.html">Member Portal</a></li><li><a href="portal-owner.html">Owner Portal</a></li><li><a href="contact.html">Get a Quote</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Barker Brothers Benefits. All rights reserved.</div>
+      <div class="powered-by">Powered by <span>Elite</span></div>
+      <div>Licensed Insurance Agency | Serving Minnesota</div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
