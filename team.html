@@ -19,12 +19,19 @@
 .team-info h4{font-family:var(--font-heading);color:var(--gray-900);font-size:1.55rem;margin-bottom:4px;}
 .team-info .role{color:var(--maroon);font-weight:600;font-size:13px;margin-bottom:18px;text-transform:uppercase;letter-spacing:1.5px;}
 .team-info p{color:var(--gray-700);font-size:14.5px;line-height:1.75;margin-bottom:14px;}
-.team-story{background:var(--cream);padding:80px 28px;}
-.team-story-inner{max-width:820px;margin:0 auto;text-align:center;}
-.team-story h2{font-family:var(--font-heading);color:var(--gray-900);font-size:2rem;margin-bottom:22px;}
-.team-story h2 em{font-style:italic;color:var(--maroon);}
-.team-story p{color:var(--gray-700);font-size:1.05rem;line-height:1.8;margin-bottom:18px;}
-@media(max-width:960px){.team-grid{grid-template-columns:1fr;}}
+.team-story{background:var(--cream);padding:90px 28px;}
+.team-story-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center;}
+.team-story-photo{position:relative;}
+.team-story-photo img{width:100%;max-width:460px;height:auto;display:block;border-radius:var(--radius-lg);box-shadow:0 20px 50px rgba(0,0,0,0.18);margin:0 auto;}
+.team-story-text h2{font-family:var(--font-heading);color:var(--gray-900);font-size:2.1rem;line-height:1.18;margin-bottom:22px;}
+.team-story-text h2 em{font-style:italic;color:var(--maroon);}
+.team-story-text p{color:var(--gray-700);font-size:1.05rem;line-height:1.8;margin-bottom:18px;}
+.team-story-text .section-eyebrow{margin-bottom:14px;}
+@media(max-width:960px){
+  .team-grid{grid-template-columns:1fr;}
+  .team-story-inner{grid-template-columns:1fr;gap:40px;text-align:center;}
+  .team-story-text h2{font-size:1.7rem;}
+}
 </style>
 </head>
 <body>
@@ -38,14 +45,7 @@
       <li><a href="services.html">Services</a></li>
       <li><a href="why-us.html">Why Us</a></li>
       <li><a href="team.html" class="active">Team</a></li>
-      <li class="has-dropdown">
-        <a href="#">Portals</a>
-        <ul class="dropdown">
-          <li><a href="portal-agent.html"><strong>Agent Portal</strong><small>For BBB agents</small></a></li>
-          <li><a href="portal-member.html"><strong>Member Portal</strong><small>For employees</small></a></li>
-          <li><a href="portal-owner.html"><strong>Owner Portal</strong><small>For business owners</small></a></li>
-        </ul>
-      </li>
+      <li><a href="portal-agent.html">Agent Portal</a></li>
       <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Menu">☰</button>
@@ -87,11 +87,16 @@
 
 <section class="team-story">
   <div class="team-story-inner">
-    <div class="section-eyebrow">Our Story</div>
-    <h2>Built on <em>handshakes and phone calls.</em></h2>
-    <p>We started Barker Brothers Benefits because we saw too many small businesses getting lost in the shuffle at big brokerage firms — treated like small accounts while Fortune 500 clients got the attention.</p>
-    <p>We wanted to build something different: an agency where the owners actually answer the phone, where employees have a real person to call, and where "benefits admin" stops being a burden on the business owner.</p>
-    <p>Today, we serve Minnesota companies across industries — from manufacturers to contractors to service businesses — with the same core promise: take the hassle off their plate.</p>
+    <div class="team-story-photo">
+      <img src="images/brothers.png" alt="Matt and Josh Barker"/>
+    </div>
+    <div class="team-story-text">
+      <div class="section-eyebrow">Our Story</div>
+      <h2>Founded in <em>2025.</em></h2>
+      <p>Barker Brothers Benefits was created with one clear goal: to help small businesses find smarter solutions to rising medical costs while still offering valuable benefits to their employees.</p>
+      <p>We believe benefits should be understandable, flexible, and financially sustainable. That belief drives everything we do &mdash; from how we design benefit strategies to how we educate employees.</p>
+      <p>As local benefits representatives, we work directly with businesses and their employees, providing hands-on support and in-person guidance when needed. We understand the local market and take pride in being a trusted, accessible partner &mdash; not a call center or one-size-fits-all provider.</p>
+    </div>
   </div>
 </section>
 
@@ -110,7 +115,7 @@
       </div>
       <div><h5>Company</h5><ul><li><a href="why-us.html">Why BBB</a></li><li><a href="team.html">Our Team</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div><h5>Services</h5><ul><li><a href="services.html">Group Health</a></li><li><a href="services.html">Dental &amp; Vision</a></li><li><a href="services.html">Life &amp; Disability</a></li><li><a href="services.html">Aflac Supplemental</a></li><li><a href="services.html">Compliance</a></li></ul></div>
-      <div><h5>Portals</h5><ul><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="portal-member.html">Member Portal</a></li><li><a href="portal-owner.html">Owner Portal</a></li><li><a href="contact.html">Get a Quote</a></li></ul></div>
+      <div><h5>Agent</h5><ul><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="contact.html">Get a Quote</a></li><li><a href="team.html">Meet the Team</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <div>&copy; 2026 Barker Brothers Benefits. All rights reserved.</div>
