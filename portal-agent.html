@@ -3,62 +3,70 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Agent Sign In — Barker Brothers Benefits</title>
-<meta name="description" content="Sign in to the BBB agent portal."/>
+<title>Agent Portal — Barker Brothers Benefits</title>
+<meta name="description" content="Agent sign-in portal for Barker Brothers Benefits staff."/>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="css/style.css"/>
-<style>
-html,body{background:var(--cream);}
-.mini-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(139,26,26,0.08);}
-.mini-nav-inner{max-width:1200px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
-.mini-nav-inner a.logo{display:flex;align-items:center;gap:10px;}
-.mini-nav-inner a.logo img{height:44px;width:auto;display:block;}
-.mini-nav-inner .links{display:flex;align-items:center;gap:28px;}
-.mini-nav-inner .links a{color:var(--gray-900);font-weight:500;font-size:15px;}
-.mini-nav-inner .links a:hover{color:var(--maroon);}
-
-.sign-in-page{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 28px 60px;}
-.sign-in-card{background:var(--white);border-radius:var(--radius-lg);box-shadow:0 20px 60px rgba(0,0,0,0.12);padding:56px 48px;max-width:480px;width:100%;text-align:center;border:1px solid var(--gray-200);}
-.sign-in-card img.logo{width:72px;height:72px;margin:0 auto 18px;display:block;}
-.sign-in-card h1{font-family:var(--font-heading);color:var(--gray-900);font-size:1.9rem;margin-bottom:8px;}
-.sign-in-card h1 em{font-style:italic;color:var(--maroon);}
-.sign-in-card p{color:var(--gray-700);font-size:15px;line-height:1.7;margin-bottom:30px;}
-.sign-in-card .btn-open{display:inline-block;background:var(--maroon);color:#fff;padding:16px 32px;border-radius:var(--radius);font-weight:600;font-size:16px;box-shadow:0 10px 30px rgba(139,26,26,0.25);transition:var(--transition);width:100%;}
-.sign-in-card .btn-open:hover{background:var(--maroon-dark);color:#fff;transform:translateY(-2px);box-shadow:0 14px 40px rgba(139,26,26,0.3);}
-.sign-in-card .help{margin-top:28px;font-size:13px;color:var(--gray-500);line-height:1.7;}
-.sign-in-card .help strong{color:var(--gray-900);font-weight:600;}
-
-.mini-footer{background:var(--gray-900);color:rgba(255,255,255,0.7);padding:28px;text-align:center;font-size:13px;}
-</style>
 </head>
 <body>
 
-<nav class="mini-nav">
-  <div class="mini-nav-inner">
-    <a href="index.html" class="logo">
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
       <img src="images/logo.png" alt="Barker Brothers Benefits"/>
     </a>
-    <div class="links">
-      <a href="index.html">Home</a>
-      <a href="team.html">Our Story</a>
-    </div>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="why-us.html">Why Us</a></li>
+      <li><a href="team.html">Team</a></li>
+      <li><a href="portal-agent.html">Agent Portal</a></li>
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Menu">☰</button>
   </div>
 </nav>
 
-<section class="sign-in-page">
-  <div class="sign-in-card">
-    <img src="images/logo.png" alt="BBB" class="logo"/>
-    <h1>Agent <em>Sign In</em></h1>
-    <p>Private portal for Matt &amp; Josh. Click below and Supabase will email you an 8-digit sign-in code &mdash; no password required.</p>
-    <a href="https://crm.barkerbb.com" class="btn-open" target="_blank" rel="noopener">Open Agent CRM &rarr;</a>
-    <div class="help">
-      <strong>Access limited</strong> to matt@barkerbb.com and josh@barkerbb.com.
+<section class="portal-page">
+  <div class="portal-box">
+    <div class="portal-side">
+      <div class="portal-side-icon">👤</div>
+      <h2>Agent Portal</h2>
+      <p>For Barker Brothers Benefits agents and staff. Manage your pipeline, accounts, commissions, and renewals all in one place.</p>
+      <ul>
+        <li>View and manage your accounts</li>
+        <li>Track pipeline &amp; opportunities</li>
+        <li>Commission tracking &amp; payouts</li>
+        <li>Renewal calendar</li>
+        <li>Client onboarding checklists</li>
+        <li>Email templates library</li>
+      </ul>
+    </div>
+    <div class="portal-form">
+      <h3>Agent Sign In</h3>
+      <p>The BBB Agent CRM is a private, invite-only tool for Barker Brothers Benefits staff. Click below to open it &mdash; you&rsquo;ll be asked for your agent email, and Supabase will send a one-time 8-digit code to sign you in. No password required.</p>
+      <a href="https://crm.barkerbb.com" id="portalSignIn" class="btn btn-maroon" target="_blank" rel="noopener">Open Agent CRM &rarr;</a>
+      <div class="help">Access limited to matt@barkerbb.com and josh@barkerbb.com. Need help? <a href="contact.html">Contact support</a></div>
     </div>
   </div>
 </section>
 
-<footer class="mini-footer">
-  &copy; 2026 Barker Brothers Benefits &middot; Licensed Insurance Agency &middot; Serving Minnesota
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo-light.png" alt="Barker Brothers Benefits"/>
+        <p>Taking the hassle out of employee benefits for Minnesota small businesses. Independent. Local. Responsive.</p>
+      </div>
+      <div><h5>Company</h5><ul><li><a href="why-us.html">Why BBB</a></li><li><a href="team.html">Our Team</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5>Services</h5><ul><li><a href="services.html">Group Health</a></li><li><a href="services.html">Dental &amp; Vision</a></li><li><a href="services.html">Life &amp; Disability</a></li><li><a href="services.html">Aflac Supplemental</a></li><li><a href="services.html">Compliance</a></li></ul></div>
+      <div><h5>Agent</h5><ul><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="contact.html">Get a Quote</a></li><li><a href="team.html">Meet the Team</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Barker Brothers Benefits. All rights reserved.</div>
+      <div class="powered-by">Powered by <span>Elite</span></div>
+      <div>Licensed Insurance Agency | Serving Minnesota</div>
+    </div>
+  </div>
 </footer>
 
 <script src="js/main.js"></script>

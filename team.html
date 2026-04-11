@@ -19,34 +19,34 @@
 .team-info h4{font-family:var(--font-heading);color:var(--gray-900);font-size:1.55rem;margin-bottom:4px;}
 .team-info .role{color:var(--maroon);font-weight:600;font-size:13px;margin-bottom:18px;text-transform:uppercase;letter-spacing:1.5px;}
 .team-info p{color:var(--gray-700);font-size:14.5px;line-height:1.75;margin-bottom:14px;}
-.team-story{background:var(--cream);padding:100px 28px;}
-.team-story-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.35fr 1fr;gap:70px;align-items:center;}
+.team-story{background:var(--cream);padding:90px 28px;}
+.team-story-inner{max-width:1080px;margin:0 auto;display:grid;grid-template-columns:1fr 1.15fr;gap:60px;align-items:center;}
 .team-story-photo{position:relative;}
-.team-story-photo img{width:100%;height:auto;display:block;border-radius:var(--radius-lg);box-shadow:0 30px 70px rgba(0,0,0,0.22);}
-.team-story-photo::before{content:'';position:absolute;top:40px;left:40px;right:-20px;bottom:-20px;border:2px solid var(--maroon);border-radius:var(--radius-lg);z-index:-1;opacity:0.35;}
-.team-story-text h2{font-family:var(--font-heading);color:var(--gray-900);font-size:2.3rem;line-height:1.18;margin-bottom:22px;}
+.team-story-photo img{width:100%;max-width:460px;height:auto;display:block;border-radius:var(--radius-lg);box-shadow:0 20px 50px rgba(0,0,0,0.18);margin:0 auto;}
+.team-story-text h2{font-family:var(--font-heading);color:var(--gray-900);font-size:2.1rem;line-height:1.18;margin-bottom:22px;}
 .team-story-text h2 em{font-style:italic;color:var(--maroon);}
 .team-story-text p{color:var(--gray-700);font-size:1.05rem;line-height:1.8;margin-bottom:18px;}
 .team-story-text .section-eyebrow{margin-bottom:14px;}
 @media(max-width:960px){
   .team-grid{grid-template-columns:1fr;}
   .team-story-inner{grid-template-columns:1fr;gap:40px;text-align:center;}
-  .team-story-photo::before{display:none;}
-  .team-story-text h2{font-size:1.8rem;}
+  .team-story-text h2{font-size:1.7rem;}
 }
 </style>
 </head>
 <body>
 
-<nav class="nav" id="nav" style="background:rgba(255,255,255,0.96);">
+<nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
       <img src="images/logo.png" alt="Barker Brothers Benefits"/>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="team.html" class="active">Our Story</a></li>
-      <li><a href="https://crm.barkerbb.com" class="nav-cta" target="_blank" rel="noopener">Sign In →</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="why-us.html">Why Us</a></li>
+      <li><a href="team.html" class="active">Team</a></li>
+      <li><a href="portal-agent.html">Agent Portal</a></li>
+      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
     </ul>
     <button class="nav-toggle" aria-label="Menu">☰</button>
   </div>
@@ -100,8 +100,29 @@
   </div>
 </section>
 
-<footer style="background:var(--gray-900);color:rgba(255,255,255,0.7);padding:28px;text-align:center;font-size:13px;">
-  &copy; 2026 Barker Brothers Benefits &middot; Licensed Insurance Agency &middot; Serving Minnesota
+<section class="cta-strip">
+  <h2>Want to <em>meet us?</em></h2>
+  <p>Schedule a free 30-minute consultation — no obligation, just a conversation.</p>
+  <a href="contact.html" class="btn btn-primary">Schedule a Call →</a>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="images/logo-light.png" alt="Barker Brothers Benefits"/>
+        <p>Taking the hassle out of employee benefits for Minnesota small businesses. Independent. Local. Responsive.</p>
+      </div>
+      <div><h5>Company</h5><ul><li><a href="why-us.html">Why BBB</a></li><li><a href="team.html">Our Team</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h5>Services</h5><ul><li><a href="services.html">Group Health</a></li><li><a href="services.html">Dental &amp; Vision</a></li><li><a href="services.html">Life &amp; Disability</a></li><li><a href="services.html">Aflac Supplemental</a></li><li><a href="services.html">Compliance</a></li></ul></div>
+      <div><h5>Agent</h5><ul><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="contact.html">Get a Quote</a></li><li><a href="team.html">Meet the Team</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <div>&copy; 2026 Barker Brothers Benefits. All rights reserved.</div>
+      <div class="powered-by">Powered by <span>Elite</span></div>
+      <div>Licensed Insurance Agency | Serving Minnesota</div>
+    </div>
+  </div>
 </footer>
 
 <script src="js/main.js"></script>
