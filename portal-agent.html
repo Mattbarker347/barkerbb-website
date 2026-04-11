@@ -50,30 +50,9 @@
     </div>
     <div class="portal-form">
       <h3>Agent Sign In</h3>
-      <p>Sign in with your BBB agent credentials to access your dashboard.</p>
-      <div class="form-field"><label>Agent Email</label><input type="email" id="portalEmail" placeholder="agent@barkerbb.com"/></div>
-      <div class="form-field"><label>Password</label><input type="password" placeholder="••••••••"/></div>
-      <label class="remember-me"><input type="checkbox" id="portalRemember"/> Remember my email on this device</label>
-      <a href="https://mattbarker347.github.io/bbb-crm/" id="portalSignIn" class="btn btn-maroon">Sign In →</a>
-      <div class="help">Need help? <a href="contact.html">Contact support</a></div>
-      <script>
-      (function(){
-        var KEY='bbb_portal_agent_email';
-        var emailInput=document.getElementById('portalEmail');
-        var remember=document.getElementById('portalRemember');
-        var signIn=document.getElementById('portalSignIn');
-        try{
-          var saved=localStorage.getItem(KEY);
-          if(saved){emailInput.value=saved;remember.checked=true;}
-        }catch(e){}
-        signIn.addEventListener('click',function(){
-          try{
-            if(remember.checked&&emailInput.value){localStorage.setItem(KEY,emailInput.value);}
-            else{localStorage.removeItem(KEY);}
-          }catch(e){}
-        });
-      })();
-      </script>
+      <p>The BBB Agent CRM is a private, invite-only tool for Barker Brothers Benefits staff. Click below to open it &mdash; you&rsquo;ll be asked for your agent email, and Supabase will send a one-time 8-digit code to sign you in. No password required.</p>
+      <a href="https://crm.barkerbb.com" id="portalSignIn" class="btn btn-maroon" target="_blank" rel="noopener">Open Agent CRM &rarr;</a>
+      <div class="help">Access limited to matt@barkerbb.com and josh@barkerbb.com. Need help? <a href="contact.html">Contact support</a></div>
     </div>
   </div>
 </section>
