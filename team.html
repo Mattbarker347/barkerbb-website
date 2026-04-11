@@ -12,6 +12,9 @@
 .team-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--gray-200);}
 .team-photo{height:280px;background:linear-gradient(135deg,var(--maroon) 0%,var(--maroon-dark) 100%);display:flex;align-items:center;justify-content:center;color:var(--white);font-family:var(--font-heading);font-size:4.5rem;position:relative;overflow:hidden;}
 .team-photo::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(200,168,78,0.2) 0%,transparent 60%);}
+.team-photo.has-photo{background:var(--cream);}
+.team-photo.has-photo::after{display:none;}
+.team-photo.has-photo img{position:relative;z-index:1;max-height:100%;max-width:100%;object-fit:contain;display:block;}
 .team-info{padding:36px;}
 .team-info h4{font-family:var(--font-heading);color:var(--gray-900);font-size:1.55rem;margin-bottom:4px;}
 .team-info .role{color:var(--maroon);font-weight:600;font-size:13px;margin-bottom:18px;text-transform:uppercase;letter-spacing:1.5px;}
@@ -61,21 +64,21 @@
   <div class="section-inner">
     <div class="team-grid">
       <div class="team-card">
-        <div class="team-photo">MB</div>
+        <div class="team-photo has-photo"><img src="images/matt-barker.png" alt="Matt Barker"/></div>
         <div class="team-info">
           <h4>Matt Barker</h4>
-          <div class="role">Co-Founder &amp; Principal</div>
-          <p>Matt brings years of experience in employee benefits consulting, specializing in helping small businesses navigate the complexities of health insurance, compliance, and employee engagement.</p>
-          <p>His focus is on building long-term relationships with clients and delivering personalized service that large firms simply can't match. If you're a BBB client, Matt is likely your primary point of contact — and the person answering your call.</p>
+          <div class="role">Co-Owner &amp; Principal</div>
+          <p>Matt is co-owner of Barker Brothers Benefits and the detail-focused half of the business. He works directly with owners, administrators, and partners to handle the day-to-day logistics of benefits — coordinating communication, integrating technology, and making sure clients always have clear next steps.</p>
+          <p>Calm and solution-oriented, he&rsquo;s at his best when things get complicated, known for simplifying complex situations and removing friction for clients. A University of Wisconsin&ndash;La Crosse Finance grad raised in the Minneapolis suburbs, Matt is proud to build a business rooted in the community that gave him so much &mdash; driven by one goal: making life easier for the people he serves.</p>
         </div>
       </div>
       <div class="team-card">
-        <div class="team-photo">JB</div>
+        <div class="team-photo has-photo"><img src="images/josh-barker.png" alt="Josh Barker"/></div>
         <div class="team-info">
           <h4>Josh Barker</h4>
-          <div class="role">Co-Founder &amp; Principal</div>
-          <p>Josh's expertise lies in strategic plan design, carrier negotiations, and supplemental coverage. He's the one who knows which carriers are aggressive this quarter and how to structure a plan that fits.</p>
-          <p>He's passionate about educating employees so they actually understand and use their benefits — ensuring businesses get the full value from what they offer their teams.</p>
+          <div class="role">Co-Owner &amp; Principal</div>
+          <p>Josh is co-owner of Barker Brothers Benefits and the relationship-focused half of the business. He partners with companies, families, and individuals to understand both their professional needs and personal priorities &mdash; so no one feels rushed, pressured, or left to navigate complex decisions alone. His day-to-day is client education, hands-on claims support, and being a steady advocate when it matters most.</p>
+          <p>Before benefits, Josh spent eight years in education, and it still shapes how he works: he believes clarity builds confidence, and he takes pride in breaking down complex topics into clear, practical guidance. Raised in the Minneapolis suburbs, he stays rooted in the community &mdash; coaching high school baseball and helping run his local town ball program each summer &mdash; and builds every client relationship on trust, mutual respect, and transparency.</p>
         </div>
       </div>
     </div>
