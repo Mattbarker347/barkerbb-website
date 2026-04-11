@@ -3,149 +3,90 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Barker Brothers Benefits — Business Hassle Removed</title>
-<meta name="description" content="Barker Brothers Benefits partners with Minnesota small businesses to navigate health coverage costs and build benefits packages that align with your budget and your team."/>
+<title>Barker Brothers Benefits — Agent Portal</title>
+<meta name="description" content="Barker Brothers Benefits — private agent portal for Matt &amp; Josh Barker."/>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="css/style.css"/>
+<style>
+html,body{background:var(--cream);}
+.mini-nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(255,255,255,0.96);backdrop-filter:blur(10px);border-bottom:1px solid rgba(139,26,26,0.08);}
+.mini-nav-inner{max-width:1200px;margin:0 auto;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;}
+.mini-nav-inner a.logo{display:flex;align-items:center;gap:10px;}
+.mini-nav-inner a.logo img{height:44px;width:auto;display:block;}
+.mini-nav-inner .links{display:flex;align-items:center;gap:28px;}
+.mini-nav-inner .links a{color:var(--gray-900);font-weight:500;font-size:15px;}
+.mini-nav-inner .links a:hover{color:var(--maroon);}
+.mini-nav-inner .btn-sign-in{background:var(--maroon);color:#fff;padding:10px 22px;border-radius:var(--radius);font-weight:600;font-size:14px;}
+.mini-nav-inner .btn-sign-in:hover{background:var(--maroon-dark);color:#fff;}
+
+.portal-hero{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 28px 60px;background:linear-gradient(180deg,var(--cream) 0%,var(--cream-dark) 100%);}
+.portal-hero-inner{max-width:1100px;width:100%;display:grid;grid-template-columns:1.15fr 1fr;gap:70px;align-items:center;}
+.portal-photo{position:relative;}
+.portal-photo img{width:100%;max-width:560px;height:auto;display:block;border-radius:var(--radius-lg);box-shadow:0 30px 70px rgba(0,0,0,0.22);margin:0 auto;}
+.portal-photo::before{content:'';position:absolute;top:30px;left:30px;right:30px;bottom:30px;background:radial-gradient(circle,rgba(200,168,78,0.15) 0%,transparent 70%);z-index:0;}
+.portal-text{}
+.portal-text .eyebrow{color:var(--maroon);font-weight:600;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:18px;}
+.portal-text h1{font-family:var(--font-heading);color:var(--gray-900);font-size:3rem;line-height:1.1;margin-bottom:18px;}
+.portal-text h1 em{font-style:italic;color:var(--maroon);}
+.portal-text p.lead{color:var(--gray-700);font-size:1.1rem;line-height:1.75;margin-bottom:30px;max-width:480px;}
+.portal-text .cta-group{display:flex;flex-wrap:wrap;gap:14px;align-items:center;}
+.portal-text .btn-open{display:inline-block;background:var(--maroon);color:#fff;padding:16px 32px;border-radius:var(--radius);font-weight:600;font-size:16px;box-shadow:0 10px 30px rgba(139,26,26,0.25);transition:var(--transition);}
+.portal-text .btn-open:hover{background:var(--maroon-dark);color:#fff;transform:translateY(-2px);box-shadow:0 14px 40px rgba(139,26,26,0.3);}
+.portal-text .btn-team{color:var(--gray-700);padding:16px 20px;font-weight:500;font-size:15px;}
+.portal-text .btn-team:hover{color:var(--maroon);}
+.portal-text .meta{margin-top:36px;font-size:13px;color:var(--gray-500);line-height:1.7;}
+.portal-text .meta strong{color:var(--gray-900);font-weight:600;}
+
+.mini-footer{background:var(--gray-900);color:rgba(255,255,255,0.7);padding:28px;text-align:center;font-size:13px;}
+.mini-footer a{color:var(--gold);}
+
+@media(max-width:860px){
+  .portal-hero-inner{grid-template-columns:1fr;gap:40px;text-align:center;}
+  .portal-text h1{font-size:2.2rem;}
+  .portal-text p.lead{margin-left:auto;margin-right:auto;}
+  .portal-text .cta-group{justify-content:center;}
+  .mini-nav-inner .links{gap:16px;}
+  .mini-nav-inner .links a:not(.btn-sign-in){display:none;}
+}
+</style>
 </head>
 <body>
 
-<nav class="nav" id="nav">
-  <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
+<nav class="mini-nav">
+  <div class="mini-nav-inner">
+    <a href="index.html" class="logo">
       <img src="images/logo.png" alt="Barker Brothers Benefits"/>
     </a>
-    <ul class="nav-links">
-      <li><a href="services.html">Services</a></li>
-      <li><a href="why-us.html">Why Us</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="portal-agent.html">Agent Portal</a></li>
-      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
-    </ul>
-    <button class="nav-toggle" aria-label="Menu">☰</button>
+    <div class="links">
+      <a href="team.html">Our Story</a>
+      <a href="https://crm.barkerbb.com" class="btn-sign-in" target="_blank" rel="noopener">Sign In →</a>
+    </div>
   </div>
 </nav>
 
-<!-- ══ HERO ══ -->
-<section class="hero">
-  <div class="hero-inner">
-    <div class="hero-eyebrow">Business Hassle Removed</div>
-    <h1>Benefits that <em>work for everyone.</em></h1>
-    <p class="hero-sub">Barker Brothers Benefits partners with Minnesota small businesses to navigate rising health coverage costs and build a benefits package that aligns with your budget, your goals, and your employees' needs.</p>
-    <div class="hero-cta-group">
-      <a href="contact.html" class="btn btn-primary">Get Your Free Quote →</a>
-      <a href="services.html" class="btn btn-outline">Explore Our Services</a>
+<section class="portal-hero">
+  <div class="portal-hero-inner">
+    <div class="portal-photo">
+      <img src="images/brothers.png" alt="Matt and Josh Barker"/>
     </div>
-  </div>
-</section>
-
-<!-- ══ SQUARE GRID — OPTIONS ══ -->
-<section class="section">
-  <div class="section-inner">
-    <div class="section-header">
-      <div class="section-eyebrow">What We Offer</div>
-      <h2>Coverage options, <em>tailored to fit.</em></h2>
-      <p class="section-lead">Click any option below to see what's included and how it can fit into your benefits strategy.</p>
-    </div>
-    <div class="square-grid">
-      <a href="product-group-health.html" class="square-card">
-        <div class="sq-icon">✚</div>
-        <div>
-          <div class="sq-title">Group Health Insurance</div>
-          <div class="sq-desc">Multi-carrier quotes from every major Minnesota provider to find the best fit.</div>
-          <div class="sq-arrow">Learn more →</div>
-        </div>
-      </a>
-      <a href="product-dental-vision.html" class="square-card">
-        <div class="sq-icon">◇</div>
-        <div>
-          <div class="sq-title">Dental &amp; Vision</div>
-          <div class="sq-desc">Affordable group dental and vision coverage that employees actually use.</div>
-          <div class="sq-arrow">Learn more →</div>
-        </div>
-      </a>
-      <a href="product-life-disability.html" class="square-card">
-        <div class="sq-icon">◉</div>
-        <div>
-          <div class="sq-title">Life &amp; Disability</div>
-          <div class="sq-desc">Income protection and peace of mind with short-term, long-term, and life options.</div>
-          <div class="sq-arrow">Learn more →</div>
-        </div>
-      </a>
-      <a href="product-supplemental.html" class="square-card">
-        <div class="sq-icon">★</div>
-        <div>
-          <div class="sq-title">Supplemental (Aflac)</div>
-          <div class="sq-desc">Accident, critical illness, and hospital indemnity that pay cash when it matters.</div>
-          <div class="sq-arrow">Learn more →</div>
-        </div>
-      </a>
-      <a href="product-enrollment-tech.html" class="square-card">
-        <div class="sq-icon">◈</div>
-        <div>
-          <div class="sq-title">Enrollment &amp; HR Tech</div>
-          <div class="sq-desc">Online enrollment and HR tools, included with your benefits package.</div>
-          <div class="sq-arrow">Learn more →</div>
-        </div>
-      </a>
-      <a href="product-employee-education.html" class="square-card">
-        <div class="sq-icon">●</div>
-        <div>
-          <div class="sq-title">Employee Education</div>
-          <div class="sq-desc">1-on-1 support so your team understands and uses the benefits you provide.</div>
-          <div class="sq-arrow">Learn more →</div>
-        </div>
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ══ ALIGNMENT / PARTNERSHIP SECTION ══ -->
-<section class="align-block">
-  <div class="align-inner">
-    <div class="align-text">
-      <div class="section-eyebrow">A True Partnership</div>
-      <h2>We work <em>alongside you.</em></h2>
-      <p>Health coverage costs keep rising, and navigating them alone is tough. That's where we come in. Barker Brothers Benefits works with you as a partner — learning your business, your budget, and what your employees actually need — and then finding the coverage that aligns with all three.</p>
-      <p>We don't hand you a plan and walk away. We sit on the same side of the table, weigh options together, and help you make decisions that make sense for the long haul.</p>
-      <a href="why-us.html" class="btn btn-outline-maroon" style="margin-top:10px;">See How We Work →</a>
-    </div>
-    <div class="align-visual">
-      <h4>What alignment looks like</h4>
-      <div class="align-row"><span class="dot"></span><strong>Your budget</strong><span>Matched to real plan options</span></div>
-      <div class="align-row"><span class="dot"></span><strong>Your goals</strong><span>Retention, attraction, growth</span></div>
-      <div class="align-row"><span class="dot"></span><strong>Your workforce</strong><span>Right coverage for real needs</span></div>
-      <div class="align-row"><span class="dot"></span><strong>The market</strong><span>All major MN carriers shopped</span></div>
-      <div class="align-row"><span class="dot"></span><strong>The long term</strong><span>Proactive renewals, no surprises</span></div>
-    </div>
-  </div>
-</section>
-
-<!-- ══ CTA STRIP ══ -->
-<section class="cta-strip">
-  <h2>Ready to <em>find the right fit?</em></h2>
-  <p>A 30-minute conversation is all it takes. No obligation, no pressure.</p>
-  <a href="contact.html" class="btn btn-primary">Request a Free Quote →</a>
-</section>
-
-<!-- ══ FOOTER ══ -->
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="images/logo-light.png" alt="Barker Brothers Benefits"/>
-        <p>Partnering with Minnesota small businesses to build benefits packages that align with their budget and their team.</p>
+    <div class="portal-text">
+      <div class="eyebrow">Barker Brothers Benefits</div>
+      <h1>Welcome back, <em>brothers.</em></h1>
+      <p class="lead">Private agent portal for Matt &amp; Josh. Manage accounts, pipeline, calendar, commissions, and renewals — all in one place.</p>
+      <div class="cta-group">
+        <a href="https://crm.barkerbb.com" class="btn-open" target="_blank" rel="noopener">Open Agent CRM →</a>
+        <a href="team.html" class="btn-team">Our story →</a>
       </div>
-      <div><h5>Company</h5><ul><li><a href="why-us.html">Why BBB</a></li><li><a href="team.html">Our Team</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><h5>Services</h5><ul><li><a href="services.html">Group Health</a></li><li><a href="services.html">Dental &amp; Vision</a></li><li><a href="services.html">Life &amp; Disability</a></li><li><a href="services.html">Aflac Supplemental</a></li><li><a href="services.html">Compliance</a></li></ul></div>
-      <div><h5>Agent</h5><ul><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="contact.html">Get a Quote</a></li><li><a href="team.html">Meet the Team</a></li></ul></div>
-    </div>
-    <div class="footer-bottom">
-      <div>&copy; 2026 Barker Brothers Benefits. All rights reserved.</div>
-      <div class="powered-by">Powered by <span>Elite</span></div>
-      <div>Licensed Insurance Agency | Serving Minnesota</div>
+      <div class="meta">
+        <strong>Access limited</strong> to matt@barkerbb.com and josh@barkerbb.com.<br/>
+        Sign-in uses a one-time 8-digit code delivered by email. No password required.
+      </div>
     </div>
   </div>
+</section>
+
+<footer class="mini-footer">
+  &copy; 2026 Barker Brothers Benefits &middot; Licensed Insurance Agency &middot; Serving Minnesota
 </footer>
 
 <script src="js/main.js"></script>
