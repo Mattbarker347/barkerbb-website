@@ -10,11 +10,11 @@
 <style>
 .team-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;max-width:1000px;margin:0 auto;}
 .team-card{background:var(--white);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow);border:1px solid var(--gray-200);}
-.team-photo{height:280px;background:linear-gradient(135deg,var(--maroon) 0%,var(--maroon-dark) 100%);display:flex;align-items:center;justify-content:center;color:var(--white);font-family:var(--font-heading);font-size:4.5rem;position:relative;overflow:hidden;}
+.team-photo{height:340px;background:linear-gradient(135deg,var(--maroon) 0%,var(--maroon-dark) 100%);display:flex;align-items:center;justify-content:center;color:var(--white);font-family:var(--font-heading);font-size:4.5rem;position:relative;overflow:hidden;}
 .team-photo::after{content:'';position:absolute;inset:0;background:radial-gradient(circle at 30% 30%,rgba(200,168,78,0.2) 0%,transparent 60%);}
 .team-photo.has-photo{background:var(--cream);}
 .team-photo.has-photo::after{display:none;}
-.team-photo.has-photo img{position:relative;z-index:1;max-height:100%;max-width:100%;object-fit:contain;display:block;}
+.team-photo.has-photo img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:center top;display:block;}
 .team-info{padding:36px;}
 .team-info h4{font-family:var(--font-heading);color:var(--gray-900);font-size:1.55rem;margin-bottom:4px;}
 .team-info .role{color:var(--maroon);font-weight:600;font-size:13px;margin-bottom:18px;text-transform:uppercase;letter-spacing:1.5px;}
@@ -103,28 +103,3 @@
 <section class="cta-strip">
   <h2>Want to <em>meet us?</em></h2>
   <p>Schedule a free 30-minute consultation — no obligation, just a conversation.</p>
-  <a href="contact.html" class="btn btn-primary">Schedule a Call →</a>
-</section>
-
-<footer class="footer">
-  <div class="footer-inner">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="images/logo-light.png" alt="Barker Brothers Benefits"/>
-        <p>Taking the hassle out of employee benefits for Minnesota small businesses. Independent. Local. Responsive.</p>
-      </div>
-      <div><h5>Company</h5><ul><li><a href="why-us.html">Why BBB</a></li><li><a href="team.html">Our Team</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><h5>Services</h5><ul><li><a href="services.html">Group Health</a></li><li><a href="services.html">Dental &amp; Vision</a></li><li><a href="services.html">Life &amp; Disability</a></li><li><a href="services.html">Aflac Supplemental</a></li><li><a href="services.html">Compliance</a></li></ul></div>
-      <div><h5>Agent</h5><ul><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="contact.html">Get a Quote</a></li><li><a href="team.html">Meet the Team</a></li></ul></div>
-    </div>
-    <div class="footer-bottom">
-      <div>&copy; 2026 Barker Brothers Benefits. All rights reserved.</div>
-      <div class="powered-by">Powered by <span>Elite</span></div>
-      <div>Licensed Insurance Agency | Serving Minnesota</div>
-    </div>
-  </div>
-</footer>
-
-<script src="js/main.js"></script>
-</body>
-</html>
