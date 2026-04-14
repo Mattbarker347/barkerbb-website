@@ -24,20 +24,37 @@ document.addEventListener('DOMContentLoaded',()=>{
   });
   // Mobile menu
   const toggle=document.querySelector('.nav-toggle');
-  if(toggle){
-    toggle.addEventListener('click',()=>{
-      const links=document.querySelector('.nav-links');
-      const isOpen=links.style.display==='flex';
-      links.style.display=isOpen?'none':'flex';
-      if(!isOpen){
-        links.style.flexDirection='column';
-        links.style.position='absolute';
-        links.style.top='78px';
-        links.style.left='0';
-        links.style.right='0';
-        links.style.background='#fff';
-        links.style.padding='24px';
-        links.style.borderBottom='1px solid #e8e2dc';
+  const links=document.querySelector('.nav-links');
+  if(toggle&&links){
+    let menuOpen=false;
+    function openMenu(){
+      menuOpen=true;
+      links.style.display='flex';
+      links.style.flexDirection='column';
+      links.style.position='absolute';
+      links.style.top='78px';
+      links.style.left='0';
+      links.style.right='0';
+      links.style.background='#fff';
+      links.style.padding='24px';
+      links.style.borderBottom='1px solid #e8e2dc';
+      toggle.textContent='\u2715';
+    }
+    function closeMenu(){
+      menuOpen=false;
+      links.removeAttribute('style');
+      toggle.textContent='\u2630';
+    }
+    toggle.addEventListener('click',function(e){
+      e.stopPropagation();
+      menuOpen?closeMenu():openMenu();
+    });
+    links.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',closeMenu);
+    });
+    document.addEventListener('click',function(e){
+      if(menuOpen&&!links.contains(e.target)&&e.target!==toggle){
+        closeMenu();
       }
     });
   }
