@@ -253,6 +253,11 @@ a:hover{color:var(--maroon-light);}
 @media(max-width:960px){
   .nav-links{display:none;}
   .nav-toggle{display:block;}
+  /* Show dropdown submenu inline when the mobile nav is expanded */
+  .dropdown{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;border:none;padding:4px 0 4px 18px;min-width:auto;background:transparent;}
+  .dropdown a{padding:8px 6px;font-size:13.5px;}
+  .dropdown a small{display:none;}
+  .has-dropdown>a::after{content:'';}
   .card-grid-3,.card-grid-2,.card-grid-4{grid-template-columns:1fr;}
   .portal-box{grid-template-columns:1fr;}
   .portal-side{padding:44px 32px;}

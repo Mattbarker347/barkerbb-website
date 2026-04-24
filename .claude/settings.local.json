@@ -103,7 +103,9 @@
       "Bash(npx vercel:*)",
       "Bash(node -e ':*)",
       "Bash(netstat -ano)",
-      "Bash(findstr :3000)"
+      "Bash(findstr :3000)",
+      "Bash(cat)",
+      "Bash(python /tmp/replace.py claims.html contact.html index.html portal-agent.html product-dental-vision.html product-employee-education.html product-enrollment-tech.html product-group-health.html product-life-disability.html product-supplemental.html services.html team.html thank-you.html why-us.html)"
     ]
   }
 }
