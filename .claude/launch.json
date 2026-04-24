@@ -4,8 +4,9 @@
     {
       "name": "site",
       "runtimeExecutable": "npx",
-      "runtimeArgs": ["serve", "C:\\Users\\M1_Barker\\Downloads\\barkerbb-website"],
-      "port": 3000
+      "runtimeArgs": ["serve", "C:\\Users\\M1_Barker\\Downloads\\barkerbb-website\\.claude\\worktrees\\keen-hodgkin"],
+      "port": 3000,
+      "autoPort": true
     }
   ]
 }
