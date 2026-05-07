@@ -61,7 +61,7 @@ Any time you change a file, just run `deploy.ps1` again. It stages, commits, and
 ## Previewing locally
 
 ```powershell
-cd "$env:USERPROFILE\Downloads\barkerbb-website"
+cd "$env:USERPROFILE\Documents\BBB\barkerbb-website"
 python -m http.server 8000
 ```
 
