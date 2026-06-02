@@ -38,6 +38,23 @@ Edit files locally → run `deploy.ps1` → it stages, commits, pushes → GitHu
 - `CNAME` (pins the site to `barkerbb.com`)
 - The DNS records (Cloudflare → GitHub Pages IPs)
 
+## Read before you write (non-negotiable)
+
+Matt's hard rule, 2026-05-30, no shortcuts. Before the first `Write` or
+`Edit` in any task, read all relevant material in full first:
+
+1. **The whole target file**, start to finish, not a grep'd excerpt. Never
+   edit a file you have only partially read. HTML, CSS, JS, every type.
+2. **Its key dependencies and callers.** A shared `css/style.css` or
+   `js/main.js` change touches all 13 pages, so read the markup that uses
+   the class or script before changing it.
+3. **The binding context**: the relevant `agent-os/` specs and
+   lessons-learned that govern the thing you are about to change.
+
+Bake this into every dispatched subagent's prompt. Knowing the concept is
+not reading the material. See
+[[feedback-read-file-fully-before-writing-code]].
+
 ## Working agreements
 
 - Show the plan first, then execute.
