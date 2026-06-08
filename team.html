@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<title>Our Team — Barker Brothers Benefits</title>
-<meta name="description" content="Meet Matt and Josh Barker — the brothers behind Barker Brothers Benefits."/>
+<title>Our Team | Barker Brothers Benefits | Minnesota Employee Benefits</title>
+<meta name="description" content="Meet the team behind Barker Brothers Benefits. Matt and Josh Barker, plus Lori Barker on client care, backed by a dedicated employee benefits enrollment team serving Minnesota small businesses."/>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="css/style.css"/>
 <style>
@@ -27,6 +27,19 @@
 .team-story-text h2 em{font-style:italic;color:var(--maroon);}
 .team-story-text p{color:var(--gray-700);font-size:1.05rem;line-height:1.8;margin-bottom:18px;}
 .team-story-text .section-eyebrow{margin-bottom:14px;}
+/* Lori: single centered team card */
+.team-solo{max-width:480px;margin:44px auto 0;}
+.team-photo.initials{background:linear-gradient(135deg,var(--maroon) 0%,var(--maroon-dark) 100%);color:var(--cream);padding:52px 40px;font-size:3.6rem;letter-spacing:3px;font-weight:700;}
+.team-photo.initials::after{background:radial-gradient(circle at 30% 30%,rgba(200,168,78,0.35) 0%,transparent 62%);}
+/* Enrollment team capability band */
+.enroll-band{background:linear-gradient(135deg,var(--maroon) 0%,var(--maroon-dark) 100%);color:var(--cream);padding:84px 28px;}
+.enroll-inner{max-width:860px;margin:0 auto;text-align:center;}
+.enroll-inner .eyebrow-light{color:var(--gold);background:rgba(200,168,78,0.15);}
+.enroll-inner h2{font-family:var(--font-heading);color:var(--white);font-size:clamp(1.7rem,3.4vw,2.4rem);line-height:1.18;margin-bottom:20px;}
+.enroll-inner h2 em{font-style:italic;color:var(--gold);}
+.enroll-inner p{color:rgba(255,255,255,0.9);font-size:1.05rem;line-height:1.8;max-width:680px;margin:0 auto 30px;}
+.enroll-tags{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;}
+.enroll-tags span{background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.28);color:var(--cream);padding:11px 20px;border-radius:100px;font-size:13.5px;font-weight:600;}
 @media(max-width:960px){
   .team-grid{grid-template-columns:1fr;}
   .team-story-inner{grid-template-columns:1fr;gap:40px;text-align:center;}
@@ -37,12 +50,12 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://barkerbb.com/team.html"/>
 <meta property="og:title" content="Team — Barker Brothers Benefits"/>
-<meta property="og:description" content="Meet Matt and Josh Barker — two brothers running an independent benefits agency in Minnesota."/>
+<meta property="og:description" content="Meet the family behind Barker Brothers Benefits: Matt and Josh Barker, Lori Barker on client care, and a dedicated enrollment team serving Minnesota small businesses."/>
 <meta property="og:image" content="https://barkerbb.com/images/logo.png"/>
 <meta property="og:site_name" content="Barker Brothers Benefits"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Team — Barker Brothers Benefits"/>
-<meta name="twitter:description" content="Meet Matt and Josh Barker — two brothers running an independent benefits agency in Minnesota."/>
+<meta name="twitter:description" content="Meet the family behind Barker Brothers Benefits: Matt and Josh Barker, Lori Barker on client care, and a dedicated enrollment team serving Minnesota small businesses."/>
 <meta name="twitter:image" content="https://barkerbb.com/images/logo.png"/>
 <!-- Analytics -->
 <script defer data-domain="barkerbb.com" src="https://plausible.io/js/script.js"></script>
@@ -80,7 +93,7 @@
   <div class="page-hero-inner">
     <div class="hero-eyebrow">Meet the Team</div>
     <h1>The <em>Barker Brothers.</em></h1>
-    <p>Two brothers, one mission: make employee benefits simple for Minnesota small businesses.</p>
+    <p>A family-run employee benefits agency in Minnesota. Two brothers, their mom on client care, and a dedicated enrollment team behind every group.</p>
   </div>
 </section>
 
@@ -105,6 +118,31 @@
           <p>Before benefits, Josh spent eight years in education, and it still shapes how he works: he believes clarity builds confidence, and he takes pride in breaking down complex topics into clear, practical guidance. Raised in the Minneapolis suburbs, he stays rooted in the community &mdash; coaching high school baseball and helping run his local town ball program each summer &mdash; and builds every client relationship on trust, mutual respect, and transparency.</p>
         </div>
       </div>
+    </div>
+    <div class="team-solo">
+      <div class="team-card">
+        <div class="team-photo initials" aria-hidden="true">LB</div>
+        <div class="team-info">
+          <h4>Lori Barker</h4>
+          <div class="role">Client Care</div>
+          <p>Lori is the friendly first voice many of our clients hear. As mom to Matt and Josh, she brings that same family care to client service, answering questions, helping employees through enrollment, and making sure nothing slips through the cracks.</p>
+          <p>Whether you are a business owner with a quick question or an employee who needs a hand with benefits, Lori makes sure you feel looked after. Reach her anytime at <a href="mailto:lori@barkerbb.com">lori@barkerbb.com</a>.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="enroll-band">
+  <div class="enroll-inner">
+    <div class="section-eyebrow eyebrow-light">Our Enrollment Team</div>
+    <h2>Dedicated enrollment support, <em>on demand.</em></h2>
+    <p>When open enrollment season hits or a larger group needs hands-on help, we bring in a dedicated benefits enrollment team, so every employee gets one-on-one guidance, in person or virtual, in the language they are most comfortable with. You get the attention of a big firm with the personal care of a local, family-run agency.</p>
+    <div class="enroll-tags">
+      <span>Group benefits enrollment</span>
+      <span>One-on-one employee sessions</span>
+      <span>On-site benefit fairs</span>
+      <span>Virtual &amp; in person</span>
     </div>
   </div>
 </section>
