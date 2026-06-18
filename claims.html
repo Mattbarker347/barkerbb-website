@@ -145,8 +145,8 @@
       <h3>Submit a Claim</h3>
       <p class="subtitle">Select your claim type, fill in your info, and attach any supporting documents. We'll get it to Aflac on your behalf.</p>
 
-      <form id="claim-form" action="https://formspree.io/f/xvzvjadw" method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="_subject" value="New Aflac Claim Submission — barkerbb.com"/>
+      <form id="claim-form" action="https://vault.barkerbb.com/api/intake" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="form_type" value="claim"/>
         <input type="hidden" name="_next" value="https://barkerbb.com/claims.html?success=claim"/>
         <input type="hidden" name="_replyto" id="claim-replyto"/>
         <input type="text" name="_gotcha" style="display:none"/>
@@ -272,9 +272,9 @@
           <label class="file-drop" for="claim-files">
             <div class="fd-icon">📎</div>
             <p>Click to upload or drag files here</p>
-            <p><strong>PDF, JPG, PNG</strong> up to 10MB each</p>
+            <p><strong>PDF, JPG, PNG</strong> up to 4MB each</p>
           </label>
-          <input type="file" id="claim-files" name="Attachments" multiple accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" style="display:none;" onchange="showFiles(this)"/>
+          <input type="file" id="claim-files" name="Attachments" multiple accept=".pdf,.jpg,.jpeg,.png" style="display:none;" onchange="showFiles(this)"/>
           <div class="file-list" id="file-list"></div>
         </div>
 
@@ -298,8 +298,8 @@
       <h3>Ask a Benefits Question</h3>
       <p class="subtitle">Have a question about your medical, dental, or vision coverage? Send it our way and we'll get back to you quickly.</p>
 
-      <form id="question-form" action="https://formspree.io/f/xvzvjadw" method="POST">
-        <input type="hidden" name="_subject" value="Benefits Question — barkerbb.com"/>
+      <form id="question-form" action="https://vault.barkerbb.com/api/intake" method="POST">
+        <input type="hidden" name="form_type" value="question"/>
         <input type="hidden" name="_next" value="https://barkerbb.com/claims.html?success=question"/>
         <input type="hidden" name="_replyto" id="q-replyto"/>
         <input type="text" name="_gotcha" style="display:none"/>
