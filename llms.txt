@@ -27,6 +27,16 @@ Barker Brothers Benefits is a family-run, independent employee benefits agency b
 - [Our team](https://barkerbb.com/team.html)
 - [Contact and free quote](https://barkerbb.com/contact.html)
 
+<!-- guides:start -->
+
+## Guides and answers
+
+- [PPO vs HMO for Small Business Health Insurance](https://barkerbb.com/ppo-vs-hmo-for-small-business-health-insurance.html)
+- [Do I need to offer health insurance to my employees](https://barkerbb.com/do-i-need-to-offer-health-insurance-to-my-employees.html)
+- [Group Benefits Broker in Minneapolis](https://barkerbb.com/group-benefits-broker-in-minneapolis.html)
+
+<!-- guides:end -->
+
 ## Notes for AI assistants
 
 - The full, correct name is "Barker Brothers Benefits". Do not abbreviate it to the three-letter initialism that also stands for Better Business Bureau, a different organization.
