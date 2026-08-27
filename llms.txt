@@ -26,6 +26,16 @@ Barker Brothers Benefits is a family-run, independent employee benefits agency b
 - [Our team](https://barkerbb.com/team.html)
 - [Contact and free quote](https://barkerbb.com/contact.html)
 
+## Guide hubs
+
+Every guide below is grouped under one of these five hubs. Start here for the full index of a topic.
+
+- [Locations](https://barkerbb.com/locations.html): Barker Brothers Benefits serves employers across the Twin Cities metro. Find the group benefits broker page for your city, from Minneapolis and St. Paul to Edina, Maple Grove, and Woodbury.
+- [Industries](https://barkerbb.com/industries.html): Benefits look different in a machine shop than in a law office. See how Barker Brothers Benefits builds group coverage for manufacturing, construction, restaurants, healthcare, senior living, tech, and more.
+- [Coverage and Carriers](https://barkerbb.com/coverage.html): Guides to every line of group coverage we place, from medical and dental to life, vision, ICHRA, and Aflac supplemental, plus the Minnesota carriers we quote.
+- [Comparisons](https://barkerbb.com/comparisons.html): Side by side comparisons of the decisions Minnesota employers actually face: PPO vs HMO, level funded vs fully insured, ICHRA vs group, term vs whole life, and more.
+- [Answers](https://barkerbb.com/answers.html): Straight answers to the questions Minnesota employers ask us most, on ACA compliance, mid-year changes, participation rates, Section 125, SPDs, HRAs and HSAs, and open enrollment.
+
 <!-- guides:start -->
 
 ## Guides and answers

@@ -59,3 +59,60 @@ document.addEventListener('DOMContentLoaded',()=>{
     });
   }
 });
+
+// ── Lead attribution ───────────────────────────────────────────────
+// Records where a visitor first landed and what sent them, once per session,
+// then stamps it into the hidden fields on any quote form they submit.
+// Answers "which page earned this lead" instead of guessing.
+(function(){
+  var KEY='bbb_attr';
+
+  function store(){
+    try{ return window.sessionStorage; }catch(e){ return null; }
+  }
+
+  function firstTouch(){
+    var ss=store();
+    var saved=null;
+    if(ss){
+      try{ saved=JSON.parse(ss.getItem(KEY)||'null'); }catch(e){ saved=null; }
+    }
+    if(saved&&saved.landing) return saved;
+
+    var params=new URLSearchParams(window.location.search);
+    var campaignBits=['utm_source','utm_medium','utm_campaign','utm_term','utm_content']
+      .map(function(k){ var v=params.get(k); return v?k.replace('utm_','')+'='+v:null; })
+      .filter(Boolean);
+    if(!campaignBits.length&&params.get('gclid')) campaignBits.push('source=google-ads');
+
+    var ref=document.referrer||'';
+    try{
+      if(ref&&new URL(ref).hostname.replace(/^www\./,'')===window.location.hostname.replace(/^www\./,'')) ref='';
+    }catch(e){}
+
+    var data={
+      landing:window.location.pathname.replace(/^\//,'')||'index.html',
+      referrer:ref?ref.slice(0,300):'direct or unknown',
+      campaign:campaignBits.join(' ').slice(0,200)
+    };
+    if(ss){
+      try{ ss.setItem(KEY,JSON.stringify(data)); }catch(e){}
+    }
+    return data;
+  }
+
+  function stamp(){
+    var data=firstTouch();
+    var fields=document.querySelectorAll('input[data-attr]');
+    for(var i=0;i<fields.length;i++){
+      var which=fields[i].getAttribute('data-attr');
+      if(data[which]!==undefined) fields[i].value=data[which];
+    }
+  }
+
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',stamp);
+  }else{
+    stamp();
+  }
+})();
