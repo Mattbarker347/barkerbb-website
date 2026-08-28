@@ -1,5 +1,5 @@
 # ──────────────────────────────────────────────────────────────
-# Barker Brothers Benefits — One-Click Deploy Script
+# Barker Brothers Benefits One-Click Deploy Script
 # Double-click this file OR right-click → "Run with PowerShell"
 # ──────────────────────────────────────────────────────────────
 
@@ -8,7 +8,7 @@ Set-Location $PSScriptRoot
 
 Write-Host ""
 Write-Host "=====================================================" -ForegroundColor Cyan
-Write-Host " Barker Brothers Benefits — Deploy to GitHub Pages" -ForegroundColor Cyan
+Write-Host " Barker Brothers Benefits, Deploy to GitHub Pages" -ForegroundColor Cyan
 Write-Host "=====================================================" -ForegroundColor Cyan
 Write-Host ""
 
@@ -91,7 +91,7 @@ try {
     git push -u origin main
     Write-Host ""
     Write-Host "=====================================================" -ForegroundColor Green
-    Write-Host " SUCCESS — site pushed to GitHub" -ForegroundColor Green
+    Write-Host " SUCCESS, site pushed to GitHub" -ForegroundColor Green
     Write-Host "=====================================================" -ForegroundColor Green
     Write-Host ""
     Write-Host " Repo:  https://github.com/mattbarker347/barkerbb-website" -ForegroundColor Cyan

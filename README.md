@@ -1,4 +1,4 @@
-# Barker Brothers Benefits — Website
+# Barker Brothers Benefits Website
 
 Static multi-page website for Barker Brothers Benefits.
 
@@ -48,7 +48,7 @@ Type: CNAME   Host: www   Value: mattbarker347.github.io
 
 **5. Enable HTTPS**
 
-Wait 5–30 minutes for DNS to propagate, then go back to **Settings → Pages** on GitHub and check **Enforce HTTPS**.
+Wait 5 to 30 minutes for DNS to propagate, then go back to **Settings → Pages** on GitHub and check **Enforce HTTPS**.
 
 Your site is now live at **https://barkerbb.com** and **https://www.barkerbb.com**.
 
@@ -69,15 +69,15 @@ Then open http://localhost:8000 in your browser.
 
 ## File map
 
-- `index.html` — homepage
-- `services.html` — services overview
-- `why-us.html` — why choose BBB
-- `team.html` — meet the brothers
-- `contact.html` — quote form
-- `portal-*.html` — Agent / Member / Owner sign-in pages
-- `product-*.html` — six individual product pages
-- `css/style.css` — shared stylesheet
-- `js/main.js` — shared JavaScript
-- `images/logo.png` — nav logo
-- `images/logo-light.png` — footer logo
-- `CNAME` — tells GitHub Pages which domain to serve (`barkerbb.com`)
+- `index.html`: homepage
+- `services.html`: services overview
+- `why-us.html`: why choose BBB
+- `team.html`: meet the brothers
+- `contact.html`: quote form
+- `portal-*.html`: Agent / Member / Owner sign-in pages
+- `product-*.html`: six individual product pages
+- `css/style.css`: shared stylesheet
+- `js/main.js`: shared JavaScript
+- `images/logo.png`: nav logo
+- `images/logo-light.png`: footer logo
+- `CNAME`: tells GitHub Pages which domain to serve (`barkerbb.com`)

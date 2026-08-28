@@ -59,9 +59,9 @@ not reading the material. See
 
 - Show the plan first, then execute.
 - Default voice for any copy: warm, conversational, first-person. Plain language, no insurance jargon where avoidable.
-- Service-forward — *what we do for you*, not *who we are*.
+- Service-forward. Show *what we do for you*, not *who we are*.
 - Reassuring, not salesy.
-- Don't promise specific coverage outcomes — defer to actual policy.
+- Don't promise specific coverage outcomes, defer to actual policy.
 - Don't quote response times faster than "within 1 business day."
 - Preview locally before pushing: `python -m http.server 8000` then http://localhost:8000.
 
