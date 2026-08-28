@@ -26,9 +26,18 @@ if "!msg!"=="" set "msg=Update site"
 
 echo.
 echo ------------------------------------------------------------
-echo Staging all changes...
-git add .
+echo Staging site files...
+rem This used to be "git add ." That is dangerous: the repo is PUBLIC and deploys
+rem straight to the live site, so a blanket add ships whatever is loose in the
+rem folder. Stage tracked changes, then the site files by name.
+git add -u
 if errorlevel 1 goto :err
+git add -- *.html css js images sitemap.xml robots.txt llms.txt CNAME *.md .gitignore deploy.ps1 push.cmd
+if errorlevel 1 goto :err
+
+echo.
+echo Not staged (not part of the site, will NOT go live):
+git ls-files --others --exclude-standard
 
 echo.
 echo Committing with message: "!msg!"

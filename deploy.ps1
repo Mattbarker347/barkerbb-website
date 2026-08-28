@@ -45,9 +45,32 @@ if ($existingRemote -notcontains "origin") {
     Write-Host "[OK] Remote 'origin' already configured." -ForegroundColor Green
 }
 
-# 4. Stage all files
-Write-Host "[..] Staging files..." -ForegroundColor Yellow
-git add .
+# 4. Stage the site files, by name
+#
+# This used to be "git add ." That is dangerous here: this repo is PUBLIC and it
+# deploys straight to the live site, so a blanket add ships whatever happens to be
+# sitting in the folder (scratch scripts, .bak files, exports, notes). We stage the
+# things that make up the website and nothing else, then report anything skipped.
+Write-Host "[..] Staging site files..." -ForegroundColor Yellow
+
+# Tracked files that changed or were deleted. Never picks up anything new.
+git add -u
+
+# New site files, by explicit path. Add to this list if the site gains a real folder.
+$sitePaths = @('*.html', 'css', 'js', 'images', 'sitemap.xml', 'robots.txt', 'llms.txt', 'CNAME', '*.md', '.gitignore', 'deploy.ps1', 'push.cmd')
+foreach ($p in $sitePaths) {
+    if (Test-Path $p) { git add -- $p }
+}
+
+# Anything still untracked was deliberately left out. Show it so it is never a surprise.
+$skipped = git ls-files --others --exclude-standard
+if ($skipped) {
+    Write-Host ""
+    Write-Host "[!] NOT staged (not part of the site). Nothing below will go live:" -ForegroundColor Yellow
+    foreach ($s in $skipped) { Write-Host "      $s" -ForegroundColor DarkYellow }
+    Write-Host "    If one of these belongs on the site, add its path to `$sitePaths in deploy.ps1." -ForegroundColor DarkGray
+    Write-Host ""
+}
 
 # 5. Commit if there are changes
 $status = git status --porcelain

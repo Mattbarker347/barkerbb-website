@@ -6,3 +6,15 @@ Thumbs.db
 node_modules/
 images/logo-raw-*.png
 .claude/
+
+# Scratch and working files. This repo is PUBLIC and deploys straight to the live
+# site, so anything left loose in this folder would otherwise ship. Belt to go with
+# the braces of explicit staging in deploy.ps1 and push.cmd.
+_tmp_*
+*.bak
+*.orig
+*.rej
+*.tmp
+/*.mjs
+.env
+.env.*
