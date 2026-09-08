@@ -1,0 +1,12 @@
+{
+  "name": "Barker Brothers Benefits",
+  "short_name": "Barker Bros",
+  "icons": [
+    { "src": "/images/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/images/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#8B1A1A",
+  "background_color": "#faf5f0",
+  "display": "browser",
+  "start_url": "/"
+}

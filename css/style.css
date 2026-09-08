@@ -304,3 +304,11 @@ a:hover{color:var(--maroon-light);}
   .lead-capture-grid{grid-template-columns:1fr;gap:36px;}
   .lead-form{padding:28px;}
 }
+
+/* ── Co-op Direct note (individual membership) ───────────────────── */
+.direct-note{margin:36px 0 4px 0;padding:26px 28px;background:var(--cream);border-left:4px solid var(--maroon);border-radius:var(--radius);}
+.direct-note h3{margin-top:0;margin-bottom:12px;font-family:var(--font-heading);color:var(--gray-900);font-size:1.15rem;}
+.direct-note p{color:var(--gray-700);font-size:15.5px;line-height:1.75;margin-bottom:14px;}
+.direct-note p:last-of-type{margin-bottom:0;}
+.direct-note .btn{margin-top:6px;}
+.direct-note .direct-fine{font-size:13px;color:var(--gray-500);line-height:1.6;margin-top:16px;}
