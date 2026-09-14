@@ -3,9 +3,15 @@
    ═══════════════════════════════════════════ */
 
 :root{
-  --maroon:#8B1A1A;
-  --maroon-dark:#6B1212;
-  --maroon-light:#a82828;
+  /* Maroon is sampled from the logo itself (operations/Brand Assets/bbb-logo.png).
+     #8D081C is both the single most common red pixel in that file and the weighted
+     mean of every red pixel in it, so it is measured, not chosen. The dark and light
+     shades sit on the same hue and saturation, keeping the lightness steps the old
+     palette used. Do not introduce a fourth maroon. */
+  --maroon:#8D081C;
+  --maroon-dark:#670614;
+  --maroon-light:#B30A23;
+  --maroon-rgb:141,8,28;
   --cream:#faf5f0;
   --cream-dark:#f0e8e0;
   --gray-50:#fbfaf9;
@@ -13,6 +19,7 @@
   --gray-200:#e8e2dc;
   --gray-300:#d4ccc2;
   --gray-500:#8a8078;
+  --gray-600:#6a615a;
   --gray-700:#4a423c;
   --gray-900:#1f1b18;
   --text:#2a2420;
@@ -36,18 +43,46 @@ a{color:var(--maroon);text-decoration:none;transition:var(--transition);}
 a:hover{color:var(--maroon-light);}
 
 /* ── NAV ── */
-.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(139,26,26,0.08);transition:var(--transition);}
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(255,255,255,0.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(var(--maroon-rgb),0.08);transition:var(--transition);}
 .nav.scrolled{box-shadow:0 2px 20px rgba(0,0,0,0.08);}
 .nav-inner{max-width:1240px;margin:0 auto;padding:0 28px;display:flex;align-items:center;justify-content:space-between;height:78px;}
 .nav-logo{display:flex;align-items:center;gap:14px;text-decoration:none;}
-.nav-logo img{height:46px;width:auto;display:block;}
-.nav-links{display:flex;align-items:center;gap:32px;list-style:none;}
+.nav-logo img{height:42px;width:auto;display:block;}
+.nav-links{display:flex;align-items:center;gap:22px;list-style:none;margin-left:auto;}
 .nav-links a{color:var(--gray-900);font-weight:500;font-size:15px;}
 .nav-links a:hover{color:var(--maroon);}
 .nav-links a.active{color:var(--maroon);}
 .nav-cta{background:var(--maroon);color:var(--white)!important;padding:11px 22px;border-radius:var(--radius);font-weight:600;font-size:14px;}
 .nav-cta:hover{background:var(--maroon-dark);color:var(--white)!important;transform:translateY(-1px);box-shadow:var(--shadow);}
 .nav-toggle{display:none;background:none;border:none;cursor:pointer;font-size:24px;color:var(--maroon);}
+
+/* Click to call, in the bar on every page. It sits outside .nav-links on purpose:
+   .nav-links is display:none under 960px, and the phone matters most on a phone.
+   The number shows on desktop and collapses to a "Call" pill on mobile, where the
+   logo plus a full phone number plus the menu button would overflow a 375px screen. */
+.nav-phone{display:inline-flex;align-items:center;color:var(--maroon);font-weight:700;font-size:15px;white-space:nowrap;margin-left:18px;letter-spacing:0.2px;}
+.nav-phone:hover{color:var(--maroon-dark);}
+.nav-phone .np-short{display:none;}
+
+/* The nav collapses at 1150px, not at the 960px the rest of the layout uses.
+   The full bar needs about 1090px and the old 960px breakpoint left it wrapping
+   into two broken lines between 960 and 1095px, which predates the phone link.
+   Nav only, so card grids and forms keep their own 960px behaviour. */
+@media(max-width:1150px){
+  .nav-links{display:none;}
+  .nav-toggle{display:block;}
+  .nav-logo img{height:38px;}
+  .nav-phone{margin-left:0;border:1.5px solid var(--maroon);padding:8px 16px;border-radius:var(--radius);font-size:14px;}
+  .nav-phone .np-full{display:none;}
+  .nav-phone .np-short{display:inline;}
+  /* Show the dropdown submenu inline once the menu is the expanded mobile one.
+     These move with the nav breakpoint, not with the 960px layout one, or the
+     Employee Resources submenu is unreachable between 960 and 1150px. */
+  .dropdown{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;border:none;padding:4px 0 4px 18px;min-width:auto;background:transparent;}
+  .dropdown a{padding:8px 6px;font-size:13.5px;}
+  .dropdown a small{display:none;}
+  .has-dropdown>a::after{content:'';}
+}
 
 /* Portal dropdown in nav */
 .has-dropdown{position:relative;}
@@ -72,7 +107,7 @@ a:hover{color:var(--maroon-light);}
 .btn-outline-maroon:hover{background:var(--maroon);color:var(--white);}
 
 /* ── HERO ── */
-.hero{padding:160px 28px 100px;background:linear-gradient(135deg,#8B1A1A 0%,#6B1212 100%);color:var(--white);position:relative;overflow:hidden;}
+.hero{padding:160px 28px 100px;background:linear-gradient(135deg,var(--maroon) 0%,var(--maroon-dark) 100%);color:var(--white);position:relative;overflow:hidden;}
 .hero::before{content:'';position:absolute;top:-20%;right:-10%;width:600px;height:600px;background:radial-gradient(circle,rgba(200,168,78,0.12) 0%,transparent 70%);border-radius:50%;}
 .hero::after{content:'';position:absolute;bottom:-30%;left:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(255,255,255,0.05) 0%,transparent 70%);border-radius:50%;}
 .hero-inner{max-width:1100px;margin:0 auto;position:relative;z-index:2;text-align:center;}
@@ -83,7 +118,7 @@ a:hover{color:var(--maroon-light);}
 .hero-cta-group{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;}
 
 /* Page hero (smaller, for sub-pages) */
-.page-hero{padding:150px 28px 70px;background:linear-gradient(135deg,#8B1A1A 0%,#6B1212 100%);color:var(--white);text-align:center;position:relative;overflow:hidden;}
+.page-hero{padding:150px 28px 70px;background:linear-gradient(135deg,var(--maroon) 0%,var(--maroon-dark) 100%);color:var(--white);text-align:center;position:relative;overflow:hidden;}
 .page-hero::before{content:'';position:absolute;top:-20%;right:-10%;width:500px;height:500px;background:radial-gradient(circle,rgba(200,168,78,0.1) 0%,transparent 70%);border-radius:50%;}
 .page-hero-inner{max-width:900px;margin:0 auto;position:relative;z-index:2;}
 .page-hero h1{font-family:var(--font-heading);font-size:clamp(2rem,4.2vw,3.4rem);line-height:1.1;margin-bottom:18px;font-weight:700;}
@@ -96,7 +131,7 @@ a:hover{color:var(--maroon-light);}
 .section-alt{background:var(--gray-50);}
 .section-inner{max-width:1240px;margin:0 auto;}
 .section-header{text-align:center;max-width:780px;margin:0 auto 60px;}
-.section-eyebrow{display:inline-block;color:var(--maroon);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;padding:6px 16px;background:rgba(139,26,26,0.08);border-radius:100px;}
+.section-eyebrow{display:inline-block;color:var(--maroon);font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;padding:6px 16px;background:rgba(var(--maroon-rgb),0.08);border-radius:100px;}
 .section h2{font-family:var(--font-heading);font-size:clamp(2rem,3.8vw,2.8rem);color:var(--gray-900);margin-bottom:18px;line-height:1.15;font-weight:700;letter-spacing:-0.5px;}
 .section h2 em{font-style:italic;color:var(--maroon);}
 .section-lead{font-size:1.1rem;color:var(--gray-700);line-height:1.75;}
@@ -153,14 +188,21 @@ a:hover{color:var(--maroon-light);}
 .form-field.full{grid-column:1/-1;}
 .form-field label{font-size:13px;color:var(--gray-700);font-weight:600;margin-bottom:6px;letter-spacing:0.3px;}
 .form-field input,.form-field select,.form-field textarea{padding:13px 16px;border:1px solid var(--gray-200);border-radius:var(--radius);font-family:var(--font-body);font-size:15px;background:var(--gray-50);transition:var(--transition);}
-.form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:none;border-color:var(--maroon);background:var(--white);box-shadow:0 0 0 3px rgba(139,26,26,0.08);}
+.form-field input:focus,.form-field select:focus,.form-field textarea:focus{outline:none;border-color:var(--maroon);background:var(--white);box-shadow:0 0 0 3px rgba(var(--maroon-rgb),0.08);}
 .form-field textarea{resize:vertical;min-height:110px;}
 
 /* ── FOOTER ── */
 .footer{background:var(--gray-900);color:rgba(255,255,255,0.7);padding:72px 28px 32px;}
 .footer-inner{max-width:1240px;margin:0 auto;}
 .footer-grid{display:grid;grid-template-columns:2fr repeat(4,1fr);gap:36px;margin-bottom:48px;}
-.footer-brand img{height:52px;width:auto;margin-bottom:18px;display:block;background:var(--cream);padding:10px 16px;border-radius:8px;}
+/* The logo is dark ink on white and there is no reversed version, so it sits on a
+   cream plate to stay legible on the charcoal footer. Sized and padded to read as a
+   deliberate lockup panel rather than a patch. A true reversed mark is the real fix
+   and it is a brand-asset decision, not a CSS one. */
+/* content-box on purpose. The global *{box-sizing:border-box} makes `height` include
+   the padding, so the old height:52px with 10px padding was really a 32px logo, and
+   adding more padding shrank it further. content-box means 42px is 42px of logo. */
+.footer-brand img{box-sizing:content-box;height:42px;width:auto;margin-bottom:20px;display:block;background:var(--cream);padding:14px 20px;border-radius:var(--radius);box-shadow:0 2px 10px rgba(0,0,0,0.18);}
 .footer-brand h5{display:none;}
 .footer-brand p{font-size:14px;line-height:1.75;max-width:320px;margin-top:12px;color:rgba(255,255,255,0.6);}
 .footer h5{color:var(--white);font-family:var(--font-heading);font-size:15px;margin-bottom:18px;font-weight:700;}
@@ -187,18 +229,23 @@ a:hover{color:var(--maroon-light);}
 
 /* ── SQUARE GRID (homepage options) ── */
 .square-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1100px;margin:0 auto;}
-.square-card{aspect-ratio:1/1;background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:34px 28px;display:flex;flex-direction:column;justify-content:space-between;transition:var(--transition);position:relative;overflow:hidden;text-decoration:none;}
+/* No forced 1/1 ratio. A square card was 353px tall for 248px of content, which
+   left a 105px hole between the icon and the title. The grid already stretches
+   every card in a row to the tallest one, so the cards stay even without it. */
+.square-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:34px 28px;display:flex;flex-direction:column;min-height:255px;transition:var(--transition);position:relative;overflow:hidden;text-decoration:none;}
 .square-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--maroon);transform:scaleX(0);transform-origin:left;transition:transform 0.35s ease;}
 .square-card:hover{border-color:var(--maroon);box-shadow:var(--shadow-lg);transform:translateY(-4px);}
 .square-card:hover::before{transform:scaleX(1);}
-.square-card .sq-icon{width:58px;height:58px;background:var(--cream);color:var(--maroon);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;transition:var(--transition);}
+.square-card .sq-icon{width:58px;height:58px;flex-shrink:0;background:var(--cream);color:var(--maroon);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;margin-bottom:22px;transition:var(--transition);}
 .square-card:hover .sq-icon{background:var(--maroon);color:var(--white);}
-.square-card .sq-title{font-family:var(--font-heading);color:var(--gray-900);font-size:1.2rem;font-weight:700;margin-top:auto;}
+.square-card .sq-title{font-family:var(--font-heading);color:var(--gray-900);font-size:1.2rem;font-weight:700;}
 .square-card .sq-desc{color:var(--gray-700);font-size:13.5px;line-height:1.6;margin-top:8px;}
-.square-card .sq-arrow{display:flex;align-items:center;gap:6px;color:var(--maroon);font-weight:600;font-size:13px;margin-top:14px;transition:var(--transition);}
+/* The arrow takes the slack instead of the icon, so it pins to the bottom of
+   every card and the row of arrows lines up. */
+.square-card .sq-arrow{display:flex;align-items:center;gap:6px;color:var(--maroon);font-weight:600;font-size:13px;margin-top:auto;padding-top:16px;transition:var(--transition);}
 .square-card:hover .sq-arrow{gap:10px;}
 @media(max-width:960px){.square-grid{grid-template-columns:repeat(2,1fr);}}
-@media(max-width:600px){.square-grid{grid-template-columns:1fr;}.square-card{aspect-ratio:auto;}}
+@media(max-width:600px){.square-grid{grid-template-columns:1fr;}.square-card{min-height:0;}}
 
 /* ── ALIGNMENT / PARTNERSHIP BLOCK ── */
 .align-block{background:var(--cream);padding:90px 28px;}
@@ -238,7 +285,12 @@ a:hover{color:var(--maroon-light);}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 .related-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);padding:22px 24px;text-decoration:none;display:block;transition:var(--transition);}
 .related-card:hover{border-color:var(--maroon);box-shadow:var(--shadow);transform:translateY(-2px);}
-.related-card .rc-icon{color:var(--maroon);font-size:22px;margin-bottom:8px;}
+/* These carry a single letter (the first letter of the card title) on 541 cards
+   sitewide. Bare on the page they read as a placeholder nobody replaced, and two
+   cards starting with the same letter sit side by side on the homepage. Given the
+   same tile treatment as .sq-icon they read as an intentional monogram. */
+.related-card .rc-icon{width:38px;height:38px;background:var(--cream);color:var(--maroon);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-size:16px;font-weight:700;line-height:1;margin-bottom:14px;transition:var(--transition);}
+.related-card:hover .rc-icon{background:var(--maroon);color:var(--white);}
 .related-card h4{font-family:var(--font-heading);color:var(--gray-900);font-size:15px;margin-bottom:4px;font-weight:700;}
 .related-card p{color:var(--gray-600);font-size:13px;margin:0;line-height:1.5;}
 @media(max-width:960px){.product-layout{grid-template-columns:1fr;gap:32px;}.product-side{position:static;}.related-grid{grid-template-columns:1fr;}}
@@ -251,13 +303,6 @@ a:hover{color:var(--maroon-light);}
 
 /* ── RESPONSIVE ── */
 @media(max-width:960px){
-  .nav-links{display:none;}
-  .nav-toggle{display:block;}
-  /* Show dropdown submenu inline when the mobile nav is expanded */
-  .dropdown{position:static;transform:none;opacity:1;visibility:visible;box-shadow:none;border:none;padding:4px 0 4px 18px;min-width:auto;background:transparent;}
-  .dropdown a{padding:8px 6px;font-size:13.5px;}
-  .dropdown a small{display:none;}
-  .has-dropdown>a::after{content:'';}
   .card-grid-3,.card-grid-2,.card-grid-4{grid-template-columns:1fr;}
   .portal-box{grid-template-columns:1fr;}
   .portal-side{padding:44px 32px;}
@@ -271,6 +316,8 @@ a:hover{color:var(--maroon-light);}
   .footer-grid{grid-template-columns:1fr 1fr;gap:40px;}
 }
 @media(max-width:600px){
+  .nav-logo img{height:32px;}
+  .nav-phone{padding:7px 13px;font-size:13.5px;}
   .footer-grid{grid-template-columns:1fr;}
   .footer-bottom{flex-direction:column;text-align:center;}
   .hero-cta-group{flex-direction:column;}
@@ -291,7 +338,7 @@ a:hover{color:var(--maroon-light);}
 .lead-capture-call a:hover{text-decoration:underline;}
 .lead-form{background:var(--white);border-radius:var(--radius-lg);padding:36px;box-shadow:var(--shadow);border:1px solid var(--gray-200);}
 .lead-form .form-submit{width:100%;background:var(--maroon);color:var(--white);padding:16px;border:none;border-radius:var(--radius);font-family:var(--font-body);font-weight:600;font-size:15px;cursor:pointer;transition:var(--transition);margin-top:6px;}
-.lead-form .form-submit:hover{background:var(--maroon-dark);transform:translateY(-1px);box-shadow:0 8px 20px rgba(139,26,26,0.25);}
+.lead-form .form-submit:hover{background:var(--maroon-dark);transform:translateY(-1px);box-shadow:0 8px 20px rgba(var(--maroon-rgb),0.25);}
 .lead-form-fine{font-size:12px;color:var(--gray-600);text-align:center;margin:14px 0 0 0;line-height:1.5;}
 
 /* ── Hub pages ──────────────────────────────────────────────────── */
