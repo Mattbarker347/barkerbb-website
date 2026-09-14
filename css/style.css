@@ -12,8 +12,14 @@
   --maroon-dark:#670614;
   --maroon-light:#B30A23;
   --maroon-rgb:141,8,28;
-  --cream:#faf5f0;
-  --cream-dark:#f0e8e0;
+  /* Cream is #F5EFE2 from the brand profile, and unlike the maroon it was NOT
+     measured: the logo sits on pure white (100% of its edge pixels), so there is no
+     cream in it to sample. This is the documented brand value, the one every deck,
+     proposal and PDF already uses, and the one the favicon and og-card were built
+     with. The site's old #faf5f0 read as a cool near-white rather than a cream.
+     --cream-dark is currently referenced nowhere; kept in step rather than removed. */
+  --cream:#F5EFE2;
+  --cream-dark:#EBE2D2;
   --gray-50:#fbfaf9;
   --gray-100:#f4f1ee;
   --gray-200:#e8e2dc;
