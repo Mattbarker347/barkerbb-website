@@ -45,6 +45,38 @@ if ($existingRemote -notcontains "origin") {
     Write-Host "[OK] Remote 'origin' already configured." -ForegroundColor Green
 }
 
+# 3b. Stamp the stylesheet link with its own content hash
+#
+# GitHub Pages serves css with max-age=14400 (four hours) and html with max-age=600
+# (ten minutes). Without a stamp, anyone who visited in the last four hours gets the
+# NEW html against their OLD cached stylesheet, and the page renders half styled.
+# That is not theoretical, it happened on the 2026-09-14 deploy: the nav wrapped into
+# two broken lines on the live site while the served css was already correct.
+# A content hash makes a changed file a different url, so a stale copy is never used.
+# This runs on every deploy so it cannot drift out of date the way a note would.
+Write-Host "[..] Stamping stylesheet cache version..." -ForegroundColor Yellow
+
+$cssHash = Get-FileHash -Path "css\style.css" -Algorithm MD5 | Select-Object -ExpandProperty Hash
+$cssHash = $cssHash.Substring(0, 8).ToLower()
+$utf8NoBom = New-Object System.Text.UTF8Encoding $false
+$stamped = 0
+
+foreach ($page in Get-ChildItem -Path . -Filter *.html -Name) {
+    $full = Join-Path $PSScriptRoot $page
+    $html = [System.IO.File]::ReadAllText($full)
+    $updated = [regex]::Replace($html, 'href="css/style\.css(\?v=[0-9a-f]+)?"', "href=`"css/style.css?v=$cssHash`"")
+    if ($updated -ne $html) {
+        [System.IO.File]::WriteAllText($full, $updated, $utf8NoBom)
+        $stamped++
+    }
+}
+
+if ($stamped -gt 0) {
+    Write-Host "[OK] Stylesheet version $cssHash, restamped $stamped page(s)." -ForegroundColor Green
+} else {
+    Write-Host "[OK] Stylesheet version $cssHash, already current on every page." -ForegroundColor Green
+}
+
 # 4. Stage the site files, by name
 #
 # This used to be "git add ." That is dangerous here: this repo is PUBLIC and it
