@@ -8,18 +8,13 @@
 <link rel="apple-touch-icon" href="/images/apple-touch-icon.png"/>
 <link rel="manifest" href="/site.webmanifest"/>
 <meta name="theme-color" content="#8D081C"/>
-<title>File a Claim or Ask a Question | Barker Brothers Benefits</title>
-<meta name="description" content="Submit an Aflac claim or ask medical, dental, and vision questions. Barker Brothers Benefits is here to help Minnesota employees navigate their coverage."/>
+<title>Benefits Help for Employees | Barker Brothers Benefits</title>
+<meta name="description" content="Questions about your medical, dental, vision or supplemental coverage, or about a claim? Barker Brothers Benefits helps Minnesota employees get answers."/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
 <link rel="stylesheet" href="css/style.css?v=e646e03e"/>
 <style>
-/* ── TABS ── */
-.claim-tabs{display:flex;gap:0;margin:0 auto 40px;max-width:960px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--gray-200);background:var(--gray-50);}
-.claim-tab{flex:1;padding:16px 24px;text-align:center;font-weight:600;font-size:15px;cursor:pointer;transition:var(--transition);color:var(--gray-700);background:transparent;border:none;font-family:var(--font-body);}
-.claim-tab:hover{background:var(--cream);}
-.claim-tab.active{background:var(--maroon);color:var(--white);}
 
 /* ── CLAIM FORM CARD ── */
 .claim-card{max-width:960px;margin:0 auto;background:var(--white);border-radius:var(--radius-lg);padding:48px;box-shadow:var(--shadow);border:1px solid var(--gray-200);}
@@ -30,30 +25,6 @@
 .form-section{margin-bottom:28px;padding-bottom:24px;border-bottom:1px solid var(--gray-200);}
 .form-section:last-of-type{border-bottom:none;margin-bottom:0;padding-bottom:0;}
 .form-section-label{font-size:12px;font-weight:700;color:var(--maroon);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:16px;display:flex;align-items:center;gap:8px;}
-
-/* ── CLAIM TYPE PICKER ── */
-.claim-type-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px;margin-bottom:24px;}
-.claim-type-btn{padding:14px 16px;border:2px solid var(--gray-200);border-radius:var(--radius);background:var(--white);cursor:pointer;transition:var(--transition);text-align:center;font-family:var(--font-body);font-size:14px;font-weight:500;color:var(--gray-700);}
-.claim-type-btn:hover{border-color:var(--maroon);background:var(--cream);}
-.claim-type-btn.selected{border-color:var(--maroon);background:rgba(141,8,28,0.06);color:var(--maroon);font-weight:600;}
-.claim-type-btn .ct-icon{font-size:22px;display:block;margin-bottom:6px;}
-
-/* ── CHECKLIST ── */
-.checklist-box{background:var(--cream);border-radius:var(--radius);padding:20px 24px;margin-bottom:24px;border-left:3px solid var(--maroon);}
-.checklist-box h5{font-family:var(--font-heading);font-size:14px;color:var(--maroon);margin-bottom:10px;}
-.checklist-box ul{list-style:none;margin:0;padding:0;}
-.checklist-box ul li{padding:6px 0;font-size:13.5px;color:var(--gray-700);display:flex;align-items:flex-start;gap:8px;}
-.checklist-box ul li::before{content:'☐';color:var(--maroon);font-size:14px;flex-shrink:0;margin-top:1px;}
-
-/* ── FILE UPLOAD ── */
-.file-drop{display:block;border:1px solid var(--gray-200);border-radius:var(--radius);padding:32px;text-align:center;cursor:pointer;transition:var(--transition);background:var(--gray-50);}
-.file-drop:hover{border-color:var(--maroon);background:var(--cream);}
-.file-drop .fd-icon{font-size:32px;margin-bottom:8px;}
-.file-drop p{font-size:14px;color:var(--gray-500);margin:0;}
-.file-drop p strong{color:var(--maroon);}
-.file-list{margin-top:12px;display:flex;flex-wrap:wrap;gap:8px;}
-.file-tag{background:var(--cream);border:1px solid var(--gray-200);padding:6px 12px;border-radius:100px;font-size:13px;color:var(--gray-700);display:flex;align-items:center;gap:6px;}
-.file-tag .remove{cursor:pointer;color:var(--maroon);font-weight:700;font-size:15px;}
 
 /* ── QUESTION TYPE PILLS ── */
 .q-type-pills{display:flex;gap:10px;margin-bottom:24px;flex-wrap:wrap;}
@@ -78,16 +49,13 @@
 /* ── RESPONSIVE ── */
 @media(max-width:768px){
   .claim-card{padding:28px 20px;}
-  .form-row{grid-template-columns:1fr;}
-  .claim-type-grid{grid-template-columns:1fr 1fr;}
-  .claim-tabs{flex-direction:column;}
-}
+  .form-row{grid-template-columns:1fr;}}
 </style>
 <link rel="canonical" href="https://barkerbb.com/claims.html"/>
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="https://barkerbb.com/claims.html"/>
 <meta property="og:title" content="Employee Resources | Barker Brothers Benefits"/>
-<meta property="og:description" content="File a claim, ask a question, or access your member portal."/>
+<meta property="og:description" content="Coverage questions, claim questions, and your member portals, all in one place."/>
 <meta property="og:image" content="https://barkerbb.com/images/og-card.png"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="630"/>
@@ -95,7 +63,7 @@
 <meta property="og:site_name" content="Barker Brothers Benefits"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="Employee Resources | Barker Brothers Benefits"/>
-<meta name="twitter:description" content="File a claim, ask a question, or access your member portal."/>
+<meta name="twitter:description" content="Coverage questions, claim questions, and your member portals, all in one place."/>
 <meta name="twitter:image" content="https://barkerbb.com/images/og-card.png"/>
 <!-- Analytics -->
 <script defer data-domain="barkerbb.com" src="https://plausible.io/js/script.js"></script>
@@ -146,7 +114,7 @@
     },
     {
       "@type": "WebPage",
-      "name": "File a Claim or Ask a Question",
+      "name": "Benefits Help for Employees",
       "url": "https://barkerbb.com/claims.html",
       "isPartOf": {
         "@id": "https://barkerbb.com/#organization"
@@ -164,7 +132,7 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "File a Claim or Ask a Question"
+          "name": "Benefits Help for Employees"
         }
       ]
     }
@@ -185,8 +153,7 @@
       <li class="has-dropdown">
         <a href="claims.html">Employee Resources</a>
         <ul class="dropdown">
-          <li><a href="claims.html"><strong>File a Claim</strong><small>Submit an Aflac claim</small></a></li>
-          <li><a href="claims.html#tab-questions"><strong>Ask a Question</strong><small>Coverage or benefits help</small></a></li>
+          <li><a href="claims.html"><strong>Benefits Help</strong><small>Coverage or claim questions</small></a></li>
           <li><a href="https://healthaccesssolutions.com/member-login" target="_blank" rel="noopener"><strong>HAS Member Portal</strong><small>Health Access Solutions login</small></a></li>
           <li><a href="https://mylogin.aflac.com/" target="_blank" rel="noopener"><strong>MyAflac Portal</strong><small>Track Aflac claims</small></a></li>
         </ul>
@@ -205,180 +172,18 @@
 <section class="page-hero">
   <div class="page-hero-inner">
     <div class="hero-eyebrow">Employee Resources</div>
-    <h1>File a <em>claim</em> or ask a <em>question.</em></h1>
-    <p>Need help with coverage, a claim, or have a question about your benefits? We're here to help. Just fill out the form below and we'll get back to you quickly.</p>
+    <h1>Questions about <em>your benefits?</em></h1>
+    <p>Coverage, a claim, a provider, a bill you don't understand. Send it our way and a real person gets back to you, usually the same day and always within 1 business day.</p>
   </div>
 </section>
 
 <!-- ══ MAIN CONTENT ══ -->
 <section class="section">
 
-  <!-- TABS -->
-  <div class="claim-tabs">
-    <button class="claim-tab active" onclick="switchTab('claims')">File a Claim</button>
-    <button class="claim-tab" onclick="switchTab('questions')">Ask a Question</button>
-  </div>
-
-  <!-- ═══════════════════════════════ -->
-  <!-- TAB 1: FILE A CLAIM            -->
-  <!-- ═══════════════════════════════ -->
-  <div class="tab-content active" id="tab-claims">
+  <div class="tab-content active" id="tab-questions">
     <div class="claim-card">
-      <h3>Submit a Claim</h3>
-      <p class="subtitle">Select your claim type, fill in your info, and attach any supporting documents. We'll get it to Aflac on your behalf.</p>
-
-      <form id="claim-form" action="https://vault.barkerbb.com/api/intake" method="POST" enctype="multipart/form-data">
-        <input type="hidden" name="form_type" value="claim"/>
-        <input type="hidden" name="_next" value="https://barkerbb.com/claims.html?success=claim"/>
-        <input type="hidden" name="_replyto" id="claim-replyto"/>
-        <input type="text" name="_gotcha" style="display:none"/>
-        <input type="hidden" name="Claim Type" id="claim-type-hidden" value=""/>
-
-        <!-- CLAIM TYPE -->
-        <div class="form-section">
-          <div class="form-section-label">① Select Claim Type</div>
-          <div class="claim-type-grid">
-            <button type="button" class="claim-type-btn" onclick="selectClaimType(this,'Accident')">
-              <span class="ct-icon">🩹</span>Accident
-            </button>
-            <button type="button" class="claim-type-btn" onclick="selectClaimType(this,'Hospital Indemnity')">
-              <span class="ct-icon">🏥</span>Hospital
-            </button>
-            <button type="button" class="claim-type-btn" onclick="selectClaimType(this,'Short-Term Disability')">
-              <span class="ct-icon">🦽</span>Disability
-            </button>
-            <button type="button" class="claim-type-btn" onclick="selectClaimType(this,'Critical Care')">
-              <span class="ct-icon">❤️‍🩹</span>Critical Care
-            </button>
-            <button type="button" class="claim-type-btn" onclick="selectClaimType(this,'Cancer')">
-              <span class="ct-icon">🎗️</span>Cancer
-            </button>
-          </div>
-
-          <!-- DYNAMIC CHECKLISTS -->
-          <div id="checklist-accident" class="checklist-box" style="display:none;">
-            <h5>Accident Claim: Documents You May Need</h5>
-            <ul>
-              <li>ER report or urgent care report</li>
-              <li>Physician's office notes</li>
-              <li>Operative/surgical report (if surgery)</li>
-              <li>Scan/imaging report (if diagnostic imaging)</li>
-              <li>HCFA 1500 or itemized hospital bill (IHB/UB04)</li>
-              <li>Ambulance bill or police report (if applicable)</li>
-              <li>Length of laceration or burn area measurements (if applicable)</li>
-              <li>Physical therapy records (if applicable)</li>
-            </ul>
-          </div>
-          <div id="checklist-hospital" class="checklist-box" style="display:none;">
-            <h5>Hospital Indemnity Claim: Documents You May Need</h5>
-            <ul>
-              <li>Itemized hospital bill (IHB/UB04) with admission and discharge dates/times</li>
-              <li>ER report (if emergency room visit)</li>
-              <li>Operative/surgical report with procedure type or code</li>
-              <li>Physician office notes or medical records</li>
-              <li>Discharge summary</li>
-              <li>Ambulance bill (if applicable)</li>
-              <li>Scan/image report (if diagnostic imaging)</li>
-              <li>Delivery type indicated (if pregnancy-related)</li>
-            </ul>
-          </div>
-          <div id="checklist-disability" class="checklist-box" style="display:none;">
-            <h5>Short-Term Disability Claim: Documents You May Need</h5>
-            <ul>
-              <li>Physician's statement completed in its entirety</li>
-              <li>Employer's statement completed in its entirety</li>
-              <li>Hospital confinement records (IHB or UB04)</li>
-              <li>Prior year's tax records (if self-employed or policy less than 2 years old)</li>
-              <li>For pregnancy: hospital discharge summary indicating delivery date and type</li>
-              <li>Physician office notes (if disability placed before delivery)</li>
-            </ul>
-          </div>
-          <div id="checklist-critical" class="checklist-box" style="display:none;">
-            <h5>Critical Care Claim: Documents You May Need</h5>
-            <ul>
-              <li>Discharge summary or medical records with diagnosis</li>
-              <li>Operative/surgical report (if surgery)</li>
-              <li>Ambulance bill or HCFA 1500 (if ambulance used)</li>
-              <li>Itemized lodging billing (if lodging benefit)</li>
-              <li>MapQuest or address proof for transportation benefit</li>
-              <li>Office notes or billing for recovery benefit</li>
-            </ul>
-          </div>
-          <div id="checklist-cancer" class="checklist-box" style="display:none;">
-            <h5>Cancer Claim: Documents You May Need</h5>
-            <ul>
-              <li>Positive pathology report (required for all skin cancer and initial internal cancer claims)</li>
-              <li>MRI, CT scan, or PET scan report (if pathological diagnosis not possible)</li>
-              <li>Itemized hospital bill (IHB/UB04) with admission/discharge dates and times</li>
-              <li>Discharge summary including room type and level of care</li>
-              <li>IHB/UB04/HCFA-1500 for radiation, chemo, or immunotherapy</li>
-              <li>Pharmacy statement/receipts for oral chemo or self-injected medication</li>
-              <li>Operative/surgical report and pathology report (if surgery)</li>
-              <li>Proof of mileage and lodging receipts (if transportation/lodging benefit)</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- YOUR INFO -->
-        <div class="form-section">
-          <div class="form-section-label">② Your Information</div>
-          <div class="form-row">
-            <div class="form-field"><label>Full Name *</label><input type="text" name="Full Name" required/></div>
-            <div class="form-field"><label>Date of Birth *</label><input type="date" name="Date of Birth" required/></div>
-          </div>
-          <div class="form-row">
-            <div class="form-field"><label>Email *</label><input type="email" name="Email" required id="claim-email" oninput="document.getElementById('claim-replyto').value=this.value"/></div>
-            <div class="form-field"><label>Phone</label><input type="tel" name="Phone"/></div>
-          </div>
-          <div class="form-row">
-            <div class="form-field"><label>Employer / Company Name *</label><input type="text" name="Company" required/></div>
-            <div class="form-field"><label>Aflac Policy Number (if known)</label><input type="text" name="Policy Number" placeholder="Optional"/></div>
-          </div>
-        </div>
-
-        <!-- CLAIM DETAILS -->
-        <div class="form-section">
-          <div class="form-section-label">③ Claim Details</div>
-          <div class="form-row">
-            <div class="form-field"><label>Date of Incident / Injury / Diagnosis *</label><input type="date" name="Incident Date" required/></div>
-            <div class="form-field"><label>Patient Name (if not you)</label><input type="text" name="Patient Name" placeholder="Leave blank if you are the patient"/></div>
-          </div>
-          <div class="form-field full"><label>Describe what happened *</label><textarea name="Description" required placeholder="Briefly describe the incident, injury, illness, or diagnosis. Include the location of injury if applicable."></textarea></div>
-          <div class="form-field full"><label>Physician / Provider Name &amp; Location</label><input type="text" name="Physician" placeholder="Dr. Smith, Maple Grove Urgent Care"/></div>
-        </div>
-
-        <!-- FILE UPLOAD -->
-        <div class="form-section">
-          <div class="form-section-label">④ Attach Documents (Optional)</div>
-          <p style="font-size:13.5px;color:var(--gray-500);margin-bottom:16px;">Upload any supporting documents listed in the checklist above, or bring them to us through the contact form.</p>
-          <label class="file-drop" for="claim-files">
-            <div class="fd-icon">📎</div>
-            <p>Click to upload or drag files here</p>
-            <p><strong>PDF, JPG, PNG</strong> up to 4MB each</p>
-          </label>
-          <input type="file" id="claim-files" name="Attachments" multiple accept=".pdf,.jpg,.jpeg,.png" style="display:none;" onchange="showFiles(this)"/>
-          <div class="file-list" id="file-list"></div>
-        </div>
-
-        <button type="submit" class="claim-submit">Submit Claim →</button>
-      </form>
-
-      <!-- SUCCESS -->
-      <div class="success-msg" id="claim-success">
-        <div class="check">✓</div>
-        <h3>Claim Submitted!</h3>
-        <p>We've received your claim and will follow up within 1 business day. If we need any additional documents, we'll reach out via email.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- ═══════════════════════════════ -->
-  <!-- TAB 2: ASK A QUESTION           -->
-  <!-- ═══════════════════════════════ -->
-  <div class="tab-content" id="tab-questions">
-    <div class="claim-card">
-      <h3>Ask a Benefits Question</h3>
-      <p class="subtitle">Have a question about your medical, dental, or vision coverage? Send it our way and we'll get back to you quickly.</p>
+      <h3>How can we help?</h3>
+      <p class="subtitle">Tell us what you need and we'll take it from there. If it's a claim, we'll walk you through it and deal with the carrier on your behalf.</p>
 
       <form id="question-form" action="https://vault.barkerbb.com/api/intake" method="POST">
         <input type="hidden" name="form_type" value="question"/>
@@ -394,7 +199,8 @@
             <button type="button" class="q-pill" onclick="selectQType(this,'Medical')">✚ Medical</button>
             <button type="button" class="q-pill" onclick="selectQType(this,'Dental')">◇ Dental</button>
             <button type="button" class="q-pill" onclick="selectQType(this,'Vision')">◎ Vision</button>
-            <button type="button" class="q-pill" onclick="selectQType(this,'Aflac / Supplemental')">★ Aflac / Supplemental</button>
+            <button type="button" class="q-pill" onclick="selectQType(this,'Supplemental')">★ Supplemental</button>
+            <button type="button" class="q-pill" onclick="selectQType(this,'Claim')">◈ Claim</button>
             <button type="button" class="q-pill" onclick="selectQType(this,'Other')">? Other</button>
           </div>
         </div>
@@ -480,7 +286,7 @@
       </div>
       <div><h5>Company</h5><ul><li><a href="why-us.html">Why Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
       <div><h5>Services</h5><ul><li><a href="product-group-health.html">Group Health</a></li><li><a href="product-dental-vision.html">Dental &amp; Vision</a></li><li><a href="product-life-disability.html">Life &amp; Disability</a></li><li><a href="product-supplemental.html">Supplemental</a></li><li><a href="services.html">Compliance</a></li></ul></div>
-      <div><h5>Resources</h5><ul><li><a href="claims.html">File a Claim</a></li><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="contact.html">Get a Quote</a></li><li><a href="team.html">Meet the Team</a></li></ul></div>
+      <div><h5>Resources</h5><ul><li><a href="claims.html">Benefits Help</a></li><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="contact.html">Get a Quote</a></li><li><a href="team.html">Meet the Team</a></li></ul></div>
       <div><h5>Guides</h5><ul><li><a href="locations.html">Locations</a></li><li><a href="industries.html">Industries</a></li><li><a href="coverage.html">Coverage and Carriers</a></li><li><a href="comparisons.html">Comparisons</a></li><li><a href="answers.html">Answers</a></li></ul></div>
 
     </div>
@@ -493,31 +299,6 @@
 
 <script src="js/main.js"></script>
 <script>
-// ── TAB SWITCHING ──
-function switchTab(tab){
-  document.querySelectorAll('.claim-tab').forEach(t=>t.classList.remove('active'));
-  document.querySelectorAll('.tab-content').forEach(t=>t.classList.remove('active'));
-  if(tab==='claims'){
-    document.querySelectorAll('.claim-tab')[0].classList.add('active');
-    document.getElementById('tab-claims').classList.add('active');
-  }else{
-    document.querySelectorAll('.claim-tab')[1].classList.add('active');
-    document.getElementById('tab-questions').classList.add('active');
-  }
-}
-
-// ── CLAIM TYPE SELECTION ──
-function selectClaimType(btn,type){
-  document.querySelectorAll('.claim-type-btn').forEach(b=>b.classList.remove('selected'));
-  btn.classList.add('selected');
-  document.getElementById('claim-type-hidden').value=type;
-  // Show matching checklist
-  document.querySelectorAll('.checklist-box').forEach(c=>c.style.display='none');
-  const map={'Accident':'accident','Hospital Indemnity':'hospital','Short-Term Disability':'disability','Critical Care':'critical','Cancer':'cancer'};
-  const el=document.getElementById('checklist-'+map[type]);
-  if(el) el.style.display='block';
-}
-
 // ── QUESTION TYPE SELECTION ──
 function selectQType(btn,type){
   document.querySelectorAll('.q-pill').forEach(b=>b.classList.remove('selected'));
@@ -525,32 +306,9 @@ function selectQType(btn,type){
   document.getElementById('q-category-hidden').value=type;
 }
 
-// ── FILE DISPLAY ──
-function showFiles(input){
-  const list=document.getElementById('file-list');
-  list.innerHTML='';
-  Array.from(input.files).forEach((f,i)=>{
-    const tag=document.createElement('span');
-    tag.className='file-tag';
-    tag.innerHTML=f.name+' <span class="remove" onclick="removeFile('+i+')">&times;</span>';
-    list.appendChild(tag);
-  });
-}
-function removeFile(idx){
-  // Note: can't modify FileList directly, but we can clear and re-prompt
-  const input=document.getElementById('claim-files');
-  input.value='';
-  document.getElementById('file-list').innerHTML='';
-}
-
 // ── SUCCESS STATE (from redirect) ──
 const params=new URLSearchParams(window.location.search);
-if(params.get('success')==='claim'){
-  document.getElementById('claim-form').style.display='none';
-  document.getElementById('claim-success').style.display='block';
-}
 if(params.get('success')==='question'){
-  switchTab('questions');
   document.getElementById('question-form').style.display='none';
   document.getElementById('question-success').style.display='block';
 }
