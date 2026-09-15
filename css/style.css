@@ -259,6 +259,22 @@ a:hover{color:var(--maroon-light);}
 @media(max-width:960px){.square-grid{grid-template-columns:repeat(2,1fr);}}
 @media(max-width:600px){.square-grid{grid-template-columns:1fr;}.square-card{min-height:0;}}
 
+/* ── WHO WE ARE (family band, homepage) ──
+   The homepage never said BBB was family run. Two brothers and their mom is the one
+   thing a competitor cannot copy, and it sat on the Team page, fifth in the nav.
+   Photo on the left so a face lands before the partnership pitch. */
+.family-band{background:var(--white);padding:20px 28px 90px;}
+.family-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:0.85fr 1fr;gap:56px;align-items:center;}
+.family-photo img{width:100%;max-width:420px;height:auto;display:block;border-radius:var(--radius-lg);box-shadow:0 18px 44px rgba(0,0,0,0.16);}
+.family-text h2{text-align:left;font-family:var(--font-heading);font-size:clamp(1.8rem,3.4vw,2.5rem);color:var(--gray-900);margin-bottom:18px;line-height:1.15;font-weight:700;}
+.family-text h2 em{font-style:italic;color:var(--maroon);}
+.family-text p{color:var(--gray-700);font-size:1.02rem;line-height:1.75;margin-bottom:16px;}
+@media(max-width:960px){
+  .family-inner{grid-template-columns:1fr;gap:34px;}
+  .family-photo{display:flex;justify-content:center;}
+  .family-band{padding:10px 24px 70px;}
+}
+
 /* ── ALIGNMENT / PARTNERSHIP BLOCK ── */
 .align-block{background:var(--cream);padding:90px 28px;}
 .align-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;}
