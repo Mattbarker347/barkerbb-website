@@ -19,6 +19,12 @@
      with. The site's old #faf5f0 read as a cool near-white rather than a cream.
      --cream-dark is currently referenced nowhere; kept in step rather than removed. */
   --cream:#F5EFE2;
+  /* The lighter cream earns its place rather than just being kept. On 78 of 96 pages
+     the quote form and the guides strip sit directly adjacent and were BOTH --cream,
+     so two separate sections merged into one undifferentiated slab. The conversion
+     block keeps the warm brand cream and comes forward; the guides strip takes the
+     lighter one and recedes. Surface ladder: white, cream-light, cream. */
+  --cream-light:#FAF5F0;
   --cream-dark:#EBE2D2;
   --gray-50:#fbfaf9;
   --gray-100:#f4f1ee;
@@ -285,7 +291,7 @@ a:hover{color:var(--maroon-light);}
 .process-list li:last-child{border-bottom:none;}
 .process-list li::before{content:counter(step);position:absolute;left:0;top:14px;width:36px;height:36px;background:var(--cream);color:var(--maroon);border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:var(--font-heading);font-weight:700;font-size:14px;}
 .process-list li strong{color:var(--gray-900);display:block;margin-bottom:3px;font-weight:700;font-size:15px;}
-.related-strip{background:var(--cream);padding:70px 28px;}
+.related-strip{background:var(--cream-light);padding:70px 28px;}
 .related-strip-inner{max-width:1140px;margin:0 auto;}
 .related-strip h3{font-family:var(--font-heading);color:var(--gray-900);font-size:1.5rem;text-align:center;margin-bottom:32px;}
 .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
