@@ -12,113 +12,113 @@ Barker Brothers Benefits is a family-run, independent employee benefits agency b
 
 ## Services
 
-- [Group Health Insurance](https://barkerbb.com/product-group-health.html): multi-carrier group medical quotes from every major Minnesota provider.
-- [Dental and Vision](https://barkerbb.com/product-dental-vision.html): affordable group dental and vision coverage.
-- [Life and Disability](https://barkerbb.com/product-life-disability.html): short-term, long-term disability, and group life.
-- [Supplemental and Aflac](https://barkerbb.com/product-supplemental.html): accident, critical illness, and hospital indemnity.
-- [Enrollment and HR Technology](https://barkerbb.com/product-enrollment-tech.html): online enrollment and HR tools.
-- [Employee Education](https://barkerbb.com/product-employee-education.html): one-on-one employee benefits support.
+- [Group Health Insurance](https://barkerbb.com/group-health-insurance-small-business-mn): multi-carrier group medical quotes from every major Minnesota provider.
+- [Dental and Vision](https://barkerbb.com/group-dental-and-vision-insurance-mn): affordable group dental and vision coverage.
+- [Life and Disability](https://barkerbb.com/group-life-and-disability-insurance-mn): short-term, long-term disability, and group life.
+- [Supplemental and Aflac](https://barkerbb.com/supplemental-insurance-for-employees-mn): accident, critical illness, and hospital indemnity.
+- [Enrollment and HR Technology](https://barkerbb.com/benefits-enrollment-software-mn): online enrollment and HR tools.
+- [Employee Education](https://barkerbb.com/employee-benefits-education-mn): one-on-one employee benefits support.
 
 ## Key pages
 
-- [Services overview](https://barkerbb.com/services.html)
-- [Why Barker Brothers Benefits](https://barkerbb.com/why-us.html)
-- [Our team](https://barkerbb.com/team.html)
-- [Contact and free quote](https://barkerbb.com/contact.html)
+- [Services overview](https://barkerbb.com/services)
+- [Why Barker Brothers Benefits](https://barkerbb.com/why-us)
+- [Our team](https://barkerbb.com/team)
+- [Contact and free quote](https://barkerbb.com/contact)
 
 ## Guide hubs
 
 Every guide below is grouped under one of these five hubs. Start here for the full index of a topic.
 
-- [Locations](https://barkerbb.com/locations.html): Barker Brothers Benefits serves employers across the Twin Cities metro. Find the group benefits broker page for your city, from Minneapolis and St. Paul to Edina, Maple Grove, and Woodbury.
-- [Industries](https://barkerbb.com/industries.html): Benefits look different in a machine shop than in a law office. See how Barker Brothers Benefits builds group coverage for manufacturing, construction, restaurants, healthcare, senior living, tech, and more.
-- [Coverage and Carriers](https://barkerbb.com/coverage.html): Guides to every line of group coverage we place, from medical and dental to life, vision, ICHRA, and Aflac supplemental, plus the Minnesota carriers we quote.
-- [Comparisons](https://barkerbb.com/comparisons.html): Side by side comparisons of the decisions Minnesota employers actually face: PPO vs HMO, level funded vs fully insured, ICHRA vs group, term vs whole life, and more.
-- [Answers](https://barkerbb.com/answers.html): Straight answers to the questions Minnesota employers ask us most, on ACA compliance, mid-year changes, participation rates, Section 125, SPDs, HRAs and HSAs, and open enrollment.
+- [Locations](https://barkerbb.com/locations): Barker Brothers Benefits serves employers across the Twin Cities metro. Find the health insurance broker page for your city, from Minneapolis and St. Paul to Edina, Maple Grove, and Woodbury.
+- [Industries](https://barkerbb.com/industries): Benefits look different in a machine shop than in a law office. See how Barker Brothers Benefits builds group coverage for manufacturing, construction, restaurants, healthcare, senior living, tech, and more.
+- [Coverage and Carriers](https://barkerbb.com/coverage): Guides to every line of group coverage we place, from medical and dental to life, vision, ICHRA, and Aflac supplemental, plus the Minnesota carriers we quote.
+- [Comparisons](https://barkerbb.com/comparisons): Side by side comparisons of the decisions Minnesota employers actually face: PPO vs HMO, level funded vs fully insured, ICHRA vs group, term vs whole life, and more.
+- [Answers](https://barkerbb.com/answers): Straight answers to the questions Minnesota employers ask us most, on ACA compliance, mid-year changes, participation rates, Section 125, SPDs, HRAs and HSAs, and open enrollment.
 
 <!-- guides:start -->
 
 ## Guides and answers
 
-- [Aflac Group Supplemental Benefits in Minnesota](https://barkerbb.com/aflac-group-supplemental-benefits-in-minnesota.html)
-- [Beam Dental for Small Business](https://barkerbb.com/beam-dental-for-small-business.html)
-- [Blue Cross Blue Shield Minnesota for Small Business](https://barkerbb.com/blue-cross-blue-shield-minnesota-for-small-business.html)
-- [Delta Dental Minnesota for Group Plans](https://barkerbb.com/delta-dental-minnesota-for-group-plans.html)
-- [Health Access Solutions Minnesota Guide](https://barkerbb.com/health-access-solutions-minnesota-guide.html)
-- [HealthPartners Group Plans in Minnesota](https://barkerbb.com/healthpartners-group-plans-in-minnesota.html)
-- [Medica Group Plans in Minnesota](https://barkerbb.com/medica-group-plans-in-minnesota.html)
-- [MetLife Group Benefits in Minnesota](https://barkerbb.com/metlife-group-benefits-in-minnesota.html)
-- [UnitedHealthcare Group Plans in Minnesota](https://barkerbb.com/unitedhealthcare-group-plans-in-minnesota.html)
-- [Accident Insurance vs Disability Insurance](https://barkerbb.com/accident-insurance-vs-disability-insurance.html)
-- [Broker vs General Agency for Group Benefits](https://barkerbb.com/broker-vs-general-agency-for-group-benefits.html)
-- [Critical Illness vs Cancer Insurance](https://barkerbb.com/critical-illness-vs-cancer-insurance.html)
-- [Delta Dental vs Beam Dental for Small Business](https://barkerbb.com/delta-dental-vs-beam-dental-for-small-business.html)
-- [Fully Insured vs Level Funded Medical Plans](https://barkerbb.com/fully-insured-vs-level-funded-medical-plans.html)
-- [Group Term Life vs Whole Life for Employers](https://barkerbb.com/group-term-life-vs-whole-life-for-employers.html)
-- [Group Vision Insurance Plan Types Compared](https://barkerbb.com/group-vision-insurance-plan-types-compared.html)
-- [Health Access Solutions Full Stack vs Traditional Group Medical](https://barkerbb.com/health-access-solutions-full-stack-vs-traditional-group-medical.html)
-- [ICHRA vs Traditional Group Health Insurance](https://barkerbb.com/ichra-vs-traditional-group-health-insurance.html)
-- [Open Enrollment vs Special Enrollment Events](https://barkerbb.com/open-enrollment-vs-special-enrollment-events.html)
-- [PPO vs HMO for Small Business Health Insurance](https://barkerbb.com/ppo-vs-hmo-for-small-business-health-insurance.html)
-- [Self Funded vs Fully Insured Group Plans](https://barkerbb.com/self-funded-vs-fully-insured-group-plans.html)
-- [Voluntary vs Employer Paid Benefits](https://barkerbb.com/voluntary-vs-employer-paid-benefits.html)
-- [Can I offer different plans to different employees](https://barkerbb.com/can-i-offer-different-plans-to-different-employees.html)
-- [Can I switch group health insurance mid year](https://barkerbb.com/can-i-switch-group-health-insurance-mid-year.html)
-- [Do I need a broker to get group health insurance](https://barkerbb.com/do-i-need-a-broker-to-get-group-health-insurance.html)
-- [Do I need a Section 125 plan for pre tax deductions](https://barkerbb.com/do-i-need-a-section-125-plan-for-pre-tax-deductions.html)
-- [Do I need to offer health insurance to my employees](https://barkerbb.com/do-i-need-to-offer-health-insurance-to-my-employees.html)
-- [How do I know if my plan complies with ACA](https://barkerbb.com/how-do-i-know-if-my-plan-complies-with-aca.html)
-- [How does Aflac work for small business owners](https://barkerbb.com/how-does-aflac-work-for-small-business-owners.html)
-- [How does Health Access Solutions cooperative healthcare work in Minnesota](https://barkerbb.com/how-does-health-access-solutions-cooperative-healthcare-work-in-minnesota.html)
-- [How long does open enrollment take for a small business](https://barkerbb.com/how-long-does-open-enrollment-take-for-a-small-business.html)
-- [How much does group health insurance cost for 10 employees in Minnesota](https://barkerbb.com/how-much-does-group-health-insurance-cost-for-10-employees-in-minnesota.html)
-- [What is a wellness benefit and how do I claim mine](https://barkerbb.com/what-is-a-wellness-benefit-and-how-do-i-claim-mine.html)
-- [What is an SPD and do I need one](https://barkerbb.com/what-is-an-spd-and-do-i-need-one.html)
-- [What is supplemental insurance and do my employees need it](https://barkerbb.com/what-is-supplemental-insurance-and-do-my-employees-need-it.html)
-- [What is the difference between an HRA, HSA, and FSA](https://barkerbb.com/what-is-the-difference-between-an-hra-hsa-and-fsa.html)
-- [What is the minimum participation rate for group health insurance](https://barkerbb.com/what-is-the-minimum-participation-rate-for-group-health-insurance.html)
-- [When can I add or remove employees from my group plan](https://barkerbb.com/when-can-i-add-or-remove-employees-from-my-group-plan.html)
-- [Group Benefits for Auto Repair and Trim Shops](https://barkerbb.com/group-benefits-for-auto-repair-and-trim-shops.html)
-- [Group Benefits for Construction Companies](https://barkerbb.com/group-benefits-for-construction-companies.html)
-- [Group Benefits for Healthcare Practices](https://barkerbb.com/group-benefits-for-healthcare-practices.html)
-- [Group Benefits for Insurance Agencies](https://barkerbb.com/group-benefits-for-insurance-agencies.html)
-- [Group Benefits for Manufacturing in Minnesota](https://barkerbb.com/group-benefits-for-manufacturing-in-minnesota.html)
-- [Group Benefits for Professional Services Firms](https://barkerbb.com/group-benefits-for-professional-services-firms.html)
-- [Group Benefits for Property Management](https://barkerbb.com/group-benefits-for-property-management.html)
-- [Group Benefits for Restaurants](https://barkerbb.com/group-benefits-for-restaurants.html)
-- [Group Benefits for Senior Living Operators](https://barkerbb.com/group-benefits-for-senior-living-operators.html)
-- [Group Benefits for Tech Companies in Minneapolis](https://barkerbb.com/group-benefits-for-tech-companies-in-minneapolis.html)
-- [Group Benefits Broker in Apple Valley](https://barkerbb.com/group-benefits-broker-in-apple-valley.html)
-- [Group Benefits Broker in Blaine](https://barkerbb.com/group-benefits-broker-in-blaine.html)
-- [Group Benefits Broker in Bloomington](https://barkerbb.com/group-benefits-broker-in-bloomington.html)
-- [Group Benefits Broker in Brooklyn Park](https://barkerbb.com/group-benefits-broker-in-brooklyn-park.html)
-- [Group Benefits Broker in Burnsville](https://barkerbb.com/group-benefits-broker-in-burnsville.html)
-- [Group Benefits Broker in Coon Rapids](https://barkerbb.com/group-benefits-broker-in-coon-rapids.html)
-- [Group Benefits Broker in Eagan](https://barkerbb.com/group-benefits-broker-in-eagan.html)
-- [Group Benefits Broker in Eden Prairie](https://barkerbb.com/group-benefits-broker-in-eden-prairie.html)
-- [Group Benefits Broker in Edina](https://barkerbb.com/group-benefits-broker-in-edina.html)
-- [Group Benefits Broker in Golden Valley](https://barkerbb.com/group-benefits-broker-in-golden-valley.html)
-- [Group Benefits Broker in Lakeville](https://barkerbb.com/group-benefits-broker-in-lakeville.html)
-- [Group Benefits Broker in Little Canada](https://barkerbb.com/group-benefits-broker-in-little-canada.html)
-- [Group Benefits Broker in Maple Grove](https://barkerbb.com/group-benefits-broker-in-maple-grove.html)
-- [Group Benefits Broker in Minneapolis](https://barkerbb.com/group-benefits-broker-in-minneapolis.html)
-- [Group Benefits Broker in Minnetonka](https://barkerbb.com/group-benefits-broker-in-minnetonka.html)
-- [Group Benefits Broker in Plymouth](https://barkerbb.com/group-benefits-broker-in-plymouth.html)
-- [Group Benefits Broker in Roseville](https://barkerbb.com/group-benefits-broker-in-roseville.html)
-- [Group Benefits Broker in Shakopee](https://barkerbb.com/group-benefits-broker-in-shakopee.html)
-- [Group Benefits Broker in St. Louis Park](https://barkerbb.com/group-benefits-broker-in-st-louis-park.html)
-- [Group Benefits Broker in St. Paul](https://barkerbb.com/group-benefits-broker-in-st-paul.html)
-- [Group Benefits Broker in Stillwater](https://barkerbb.com/group-benefits-broker-in-stillwater.html)
-- [Group Benefits Broker in Woodbury](https://barkerbb.com/group-benefits-broker-in-woodbury.html)
-- [Accident Insurance for Employees](https://barkerbb.com/accident-insurance-for-employees.html)
-- [Critical Illness Insurance for Employees](https://barkerbb.com/critical-illness-insurance-for-employees.html)
-- [Group Dental Insurance in Minnesota](https://barkerbb.com/group-dental-insurance-in-minnesota.html)
-- [Group Life Insurance in Minnesota](https://barkerbb.com/group-life-insurance-in-minnesota.html)
-- [Group Medical Insurance in Minnesota](https://barkerbb.com/group-medical-insurance-in-minnesota.html)
-- [Group Vision Insurance in Minnesota](https://barkerbb.com/group-vision-insurance-in-minnesota.html)
-- [ICHRA for Minnesota Businesses](https://barkerbb.com/ichra-for-minnesota-businesses.html)
+- [Aflac Group Supplemental Benefits in Minnesota](https://barkerbb.com/aflac-group-supplemental-benefits-in-minnesota)
+- [Beam Dental for Small Business](https://barkerbb.com/beam-dental-for-small-business)
+- [Blue Cross Blue Shield Minnesota for Small Business](https://barkerbb.com/blue-cross-blue-shield-minnesota-for-small-business)
+- [Delta Dental Minnesota for Group Plans](https://barkerbb.com/delta-dental-minnesota-for-group-plans)
+- [Health Access Solutions Minnesota Guide](https://barkerbb.com/health-access-solutions-minnesota-guide)
+- [HealthPartners Group Plans in Minnesota](https://barkerbb.com/healthpartners-group-plans-in-minnesota)
+- [Medica Group Plans in Minnesota](https://barkerbb.com/medica-group-plans-in-minnesota)
+- [MetLife Group Benefits in Minnesota](https://barkerbb.com/metlife-group-benefits-in-minnesota)
+- [UnitedHealthcare Group Plans in Minnesota](https://barkerbb.com/unitedhealthcare-group-plans-in-minnesota)
+- [Accident Insurance vs Disability Insurance](https://barkerbb.com/accident-insurance-vs-disability-insurance)
+- [Broker vs General Agency for Group Benefits](https://barkerbb.com/broker-vs-general-agency-for-group-benefits)
+- [Critical Illness vs Cancer Insurance](https://barkerbb.com/critical-illness-vs-cancer-insurance)
+- [Delta Dental vs Beam Dental for Small Business](https://barkerbb.com/delta-dental-vs-beam-dental-for-small-business)
+- [Fully Insured vs Level Funded Medical Plans](https://barkerbb.com/fully-insured-vs-level-funded-medical-plans)
+- [Group Term Life vs Whole Life for Employers](https://barkerbb.com/group-term-life-vs-whole-life-for-employers)
+- [Group Vision Insurance Plan Types Compared](https://barkerbb.com/group-vision-insurance-plan-types-compared)
+- [Health Access Solutions Full Stack vs Traditional Group Medical](https://barkerbb.com/health-access-solutions-full-stack-vs-traditional-group-medical)
+- [ICHRA vs Traditional Group Health Insurance](https://barkerbb.com/ichra-vs-traditional-group-health-insurance)
+- [Open Enrollment vs Special Enrollment Events](https://barkerbb.com/open-enrollment-vs-special-enrollment-events)
+- [PPO vs HMO for Small Business Health Insurance](https://barkerbb.com/ppo-vs-hmo-for-small-business-health-insurance)
+- [Self Funded vs Fully Insured Group Plans](https://barkerbb.com/self-funded-vs-fully-insured-group-plans)
+- [Voluntary vs Employer Paid Benefits](https://barkerbb.com/voluntary-vs-employer-paid-benefits)
+- [Can I offer different plans to different employees](https://barkerbb.com/can-i-offer-different-plans-to-different-employees)
+- [Can I switch group health insurance mid year](https://barkerbb.com/can-i-switch-group-health-insurance-mid-year)
+- [Do I need a broker to get group health insurance](https://barkerbb.com/do-i-need-a-broker-to-get-group-health-insurance)
+- [Do I need a Section 125 plan for pre tax deductions](https://barkerbb.com/do-i-need-a-section-125-plan-for-pre-tax-deductions)
+- [Do I need to offer health insurance to my employees](https://barkerbb.com/do-i-need-to-offer-health-insurance-to-my-employees)
+- [How do I know if my plan complies with ACA](https://barkerbb.com/how-do-i-know-if-my-plan-complies-with-aca)
+- [How does Aflac work for small business owners](https://barkerbb.com/how-does-aflac-work-for-small-business-owners)
+- [How does Health Access Solutions cooperative healthcare work in Minnesota](https://barkerbb.com/how-does-health-access-solutions-cooperative-healthcare-work-in-minnesota)
+- [How long does open enrollment take for a small business](https://barkerbb.com/how-long-does-open-enrollment-take-for-a-small-business)
+- [How much does group health insurance cost for 10 employees in Minnesota](https://barkerbb.com/how-much-does-group-health-insurance-cost-for-10-employees-in-minnesota)
+- [What is a wellness benefit and how do I claim mine](https://barkerbb.com/what-is-a-wellness-benefit-and-how-do-i-claim-mine)
+- [What is an SPD and do I need one](https://barkerbb.com/what-is-an-spd-and-do-i-need-one)
+- [What is supplemental insurance and do my employees need it](https://barkerbb.com/what-is-supplemental-insurance-and-do-my-employees-need-it)
+- [What is the difference between an HRA, HSA, and FSA](https://barkerbb.com/what-is-the-difference-between-an-hra-hsa-and-fsa)
+- [What is the minimum participation rate for group health insurance](https://barkerbb.com/what-is-the-minimum-participation-rate-for-group-health-insurance)
+- [When can I add or remove employees from my group plan](https://barkerbb.com/when-can-i-add-or-remove-employees-from-my-group-plan)
+- [Group Benefits for Auto Repair and Trim Shops](https://barkerbb.com/employee-benefits-for-auto-repair-and-trim-shops-mn)
+- [Group Benefits for Construction Companies](https://barkerbb.com/employee-benefits-for-construction-companies-mn)
+- [Group Benefits for Healthcare Practices](https://barkerbb.com/employee-benefits-for-healthcare-practices-mn)
+- [Group Benefits for Insurance Agencies](https://barkerbb.com/employee-benefits-for-insurance-agencies-mn)
+- [Group Benefits for Manufacturing in Minnesota](https://barkerbb.com/employee-benefits-for-manufacturing-mn)
+- [Group Benefits for Professional Services Firms](https://barkerbb.com/employee-benefits-for-professional-services-firms-mn)
+- [Group Benefits for Property Management](https://barkerbb.com/employee-benefits-for-property-management-mn)
+- [Group Benefits for Restaurants](https://barkerbb.com/employee-benefits-for-restaurants-mn)
+- [Group Benefits for Senior Living Operators](https://barkerbb.com/employee-benefits-for-senior-living-operators-mn)
+- [Group Benefits for Tech Companies in Minneapolis](https://barkerbb.com/employee-benefits-for-tech-companies-minneapolis)
+- [Health Insurance Broker in Apple Valley, MN](https://barkerbb.com/health-insurance-broker-apple-valley-mn)
+- [Health Insurance Broker in Blaine, MN](https://barkerbb.com/health-insurance-broker-blaine-mn)
+- [Health Insurance Broker in Bloomington, MN](https://barkerbb.com/health-insurance-broker-bloomington-mn)
+- [Health Insurance Broker in Brooklyn Park, MN](https://barkerbb.com/health-insurance-broker-brooklyn-park-mn)
+- [Health Insurance Broker in Burnsville, MN](https://barkerbb.com/health-insurance-broker-burnsville-mn)
+- [Health Insurance Broker in Coon Rapids, MN](https://barkerbb.com/health-insurance-broker-coon-rapids-mn)
+- [Health Insurance Broker in Eagan, MN](https://barkerbb.com/health-insurance-broker-eagan-mn)
+- [Health Insurance Broker in Eden Prairie, MN](https://barkerbb.com/health-insurance-broker-eden-prairie-mn)
+- [Health Insurance Broker in Edina, MN](https://barkerbb.com/health-insurance-broker-edina-mn)
+- [Health Insurance Broker in Golden Valley, MN](https://barkerbb.com/health-insurance-broker-golden-valley-mn)
+- [Health Insurance Broker in Lakeville, MN](https://barkerbb.com/health-insurance-broker-lakeville-mn)
+- [Health Insurance Broker in Little Canada, MN](https://barkerbb.com/health-insurance-broker-little-canada-mn)
+- [Health Insurance Broker in Maple Grove, MN](https://barkerbb.com/health-insurance-broker-maple-grove-mn)
+- [Health Insurance Broker in Minneapolis, MN](https://barkerbb.com/health-insurance-broker-minneapolis-mn)
+- [Health Insurance Broker in Minnetonka, MN](https://barkerbb.com/health-insurance-broker-minnetonka-mn)
+- [Health Insurance Broker in Plymouth, MN](https://barkerbb.com/health-insurance-broker-plymouth-mn)
+- [Health Insurance Broker in Roseville, MN](https://barkerbb.com/health-insurance-broker-roseville-mn)
+- [Health Insurance Broker in Shakopee, MN](https://barkerbb.com/health-insurance-broker-shakopee-mn)
+- [Health Insurance Broker in St. Louis Park, MN](https://barkerbb.com/health-insurance-broker-st-louis-park-mn)
+- [Health Insurance Broker in St. Paul, MN](https://barkerbb.com/health-insurance-broker-st-paul-mn)
+- [Health Insurance Broker in Stillwater, MN](https://barkerbb.com/health-insurance-broker-stillwater-mn)
+- [Health Insurance Broker in Woodbury, MN](https://barkerbb.com/health-insurance-broker-woodbury-mn)
+- [Accident Insurance for Employees](https://barkerbb.com/accident-insurance-for-employees)
+- [Critical Illness Insurance for Employees](https://barkerbb.com/critical-illness-insurance-for-employees)
+- [Group Dental Insurance in Minnesota](https://barkerbb.com/group-dental-insurance-in-minnesota)
+- [Group Life Insurance in Minnesota](https://barkerbb.com/group-life-insurance-in-minnesota)
+- [Group Medical Insurance in Minnesota](https://barkerbb.com/group-medical-insurance-in-minnesota)
+- [Group Vision Insurance in Minnesota](https://barkerbb.com/group-vision-insurance-in-minnesota)
+- [ICHRA for Minnesota Businesses](https://barkerbb.com/ichra-for-minnesota-businesses)
 
-- [When Minnesota Small Group Health Rates Change](https://barkerbb.com/when-minnesota-small-group-health-rates-change.html)
+- [When Minnesota Small Group Health Rates Change](https://barkerbb.com/when-minnesota-small-group-health-rates-change)
 
 <!-- guides:end -->
 

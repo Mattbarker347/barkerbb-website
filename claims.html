@@ -13,7 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-<link rel="stylesheet" href="css/style.css?v=e646e03e"/>
+<link rel="stylesheet" href="css/style.css?v=337d0267"/>
 <style>
 
 /* ── CLAIM FORM CARD ── */
@@ -51,9 +51,9 @@
   .claim-card{padding:28px 20px;}
   .form-row{grid-template-columns:1fr;}}
 </style>
-<link rel="canonical" href="https://barkerbb.com/claims.html"/>
+<link rel="canonical" href="https://barkerbb.com/claims"/>
 <meta property="og:type" content="website"/>
-<meta property="og:url" content="https://barkerbb.com/claims.html"/>
+<meta property="og:url" content="https://barkerbb.com/claims"/>
 <meta property="og:title" content="Employee Resources | Barker Brothers Benefits"/>
 <meta property="og:description" content="Coverage questions, claim questions, and your member portals, all in one place."/>
 <meta property="og:image" content="https://barkerbb.com/images/og-card.png"/>
@@ -115,7 +115,7 @@
     {
       "@type": "WebPage",
       "name": "Benefits Help for Employees",
-      "url": "https://barkerbb.com/claims.html",
+      "url": "https://barkerbb.com/claims",
       "isPartOf": {
         "@id": "https://barkerbb.com/#organization"
       }
@@ -144,24 +144,35 @@
 
 <nav class="nav" id="nav">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
+    <a href="/" class="nav-logo">
       <img src="images/logo.png" alt="Barker Brothers Benefits" width="700" height="108"/>
     </a>
     <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
+      <li><a href="/">Home</a></li>
       <li class="has-dropdown">
-        <a href="claims.html">Employee Resources</a>
+        <a href="/services">Services</a>
         <ul class="dropdown">
-          <li><a href="claims.html"><strong>Benefits Help</strong><small>Coverage or claim questions</small></a></li>
+          <li><a href="/services"><strong>All Services</strong><small>Everything we do, in one place</small></a></li>
+          <li><a href="/group-health-insurance-small-business-mn"><strong>Group Health Insurance</strong><small>Plans from every major MN carrier</small></a></li>
+          <li><a href="/group-dental-and-vision-insurance-mn"><strong>Dental &amp; Vision</strong><small>Coverage they use every year</small></a></li>
+          <li><a href="/group-life-and-disability-insurance-mn"><strong>Life &amp; Disability</strong><small>Income protection for your team</small></a></li>
+          <li><a href="/supplemental-insurance-for-employees-mn"><strong>Supplemental Coverage</strong><small>Accident, illness, hospital cash</small></a></li>
+          <li><a href="/benefits-enrollment-software-mn"><strong>Enrollment Technology</strong><small>Online enrollment and HR tools</small></a></li>
+          <li><a href="/employee-benefits-education-mn"><strong>Employee Education</strong><small>Meetings and year-round support</small></a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="/claims">Employee Resources</a>
+        <ul class="dropdown">
+          <li><a href="/claims"><strong>Benefits Help</strong><small>Coverage or claim questions</small></a></li>
           <li><a href="https://healthaccesssolutions.com/member-login" target="_blank" rel="noopener"><strong>HAS Member Portal</strong><small>Health Access Solutions login</small></a></li>
           <li><a href="https://mylogin.aflac.com/" target="_blank" rel="noopener"><strong>MyAflac Portal</strong><small>Track Aflac claims</small></a></li>
         </ul>
       </li>
-      <li><a href="why-us.html">Why Us</a></li>
-      <li><a href="team.html">Team</a></li>
-      <li><a href="portal-agent.html">Agent Portal</a></li>
-      <li><a href="contact.html" class="nav-cta">Get a Quote</a></li>
+      <li><a href="/why-us">Why Us</a></li>
+      <li><a href="/team">Team</a></li>
+      <li><a href="/portal-agent">Agent Portal</a></li>
+      <li><a href="/contact" class="nav-cta">Get a Quote</a></li>
     </ul>
     <a href="tel:+17632032728" class="nav-phone" aria-label="Call Barker Brothers Benefits at 763 203 2728"><span class="np-full">(763) 203-2728</span><span class="np-short">Call</span></a>
     <button class="nav-toggle" aria-label="Menu">☰</button>
@@ -187,7 +198,7 @@
 
       <form id="question-form" action="https://vault.barkerbb.com/api/intake" method="POST">
         <input type="hidden" name="form_type" value="question"/>
-        <input type="hidden" name="_next" value="https://barkerbb.com/claims.html?success=question"/>
+        <input type="hidden" name="_next" value="https://barkerbb.com/claims?success=question"/>
         <input type="hidden" name="_replyto" id="q-replyto"/>
         <input type="text" name="_gotcha" style="display:none"/>
         <input type="hidden" name="Question Category" id="q-category-hidden" value=""/>
@@ -257,7 +268,7 @@
         <div style="font-size:36px;margin-bottom:14px;">📋</div>
         <h4 style="font-family:var(--font-heading);font-size:1.1rem;color:var(--gray-900);margin-bottom:8px;">Find a Provider</h4>
         <p style="font-size:14px;color:var(--gray-700);margin-bottom:16px;">Search for in-network doctors, dentists, and vision providers near you.</p>
-        <a href="contact.html" class="btn btn-outline-maroon" style="font-size:13px;padding:10px 20px;">Contact Us for Help →</a>
+        <a href="/contact" class="btn btn-outline-maroon" style="font-size:13px;padding:10px 20px;">Contact Us for Help →</a>
       </div>
       <div style="background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:32px;text-align:center;">
         <div style="font-size:36px;margin-bottom:14px;">📞</div>
@@ -284,10 +295,10 @@
             <a href="https://barkerbb.com" style="color:inherit;text-decoration:none;">barkerbb.com</a>
           </p>
       </div>
-      <div><h5>Company</h5><ul><li><a href="why-us.html">Why Us</a></li><li><a href="team.html">Our Team</a></li><li><a href="services.html">Services</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-      <div><h5>Services</h5><ul><li><a href="product-group-health.html">Group Health</a></li><li><a href="product-dental-vision.html">Dental &amp; Vision</a></li><li><a href="product-life-disability.html">Life &amp; Disability</a></li><li><a href="product-supplemental.html">Supplemental</a></li><li><a href="services.html">Compliance</a></li></ul></div>
-      <div><h5>Resources</h5><ul><li><a href="claims.html">Benefits Help</a></li><li><a href="portal-agent.html">Agent Portal</a></li><li><a href="contact.html">Get a Quote</a></li><li><a href="team.html">Meet the Team</a></li></ul></div>
-      <div><h5>Guides</h5><ul><li><a href="locations.html">Locations</a></li><li><a href="industries.html">Industries</a></li><li><a href="coverage.html">Coverage and Carriers</a></li><li><a href="comparisons.html">Comparisons</a></li><li><a href="answers.html">Answers</a></li></ul></div>
+      <div><h5>Company</h5><ul><li><a href="/why-us">Why Us</a></li><li><a href="/team">Our Team</a></li><li><a href="/services">Services</a></li><li><a href="/contact">Contact</a></li></ul></div>
+      <div><h5>Services</h5><ul><li><a href="/group-health-insurance-small-business-mn">Group Health</a></li><li><a href="/group-dental-and-vision-insurance-mn">Dental &amp; Vision</a></li><li><a href="/group-life-and-disability-insurance-mn">Life &amp; Disability</a></li><li><a href="/supplemental-insurance-for-employees-mn">Supplemental</a></li><li><a href="/services">Compliance</a></li></ul></div>
+      <div><h5>Resources</h5><ul><li><a href="/claims">Benefits Help</a></li><li><a href="/portal-agent">Agent Portal</a></li><li><a href="/contact">Get a Quote</a></li><li><a href="/team">Meet the Team</a></li></ul></div>
+      <div><h5>Guides</h5><ul><li><a href="/locations">Locations</a></li><li><a href="/industries">Industries</a></li><li><a href="/coverage">Coverage and Carriers</a></li><li><a href="/comparisons">Comparisons</a></li><li><a href="/answers">Answers</a></li></ul></div>
 
     </div>
     <div class="footer-bottom">
