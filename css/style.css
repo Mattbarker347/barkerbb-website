@@ -410,47 +410,30 @@ a:hover{color:var(--maroon-light);}
   .faq-inner h2{font-size:1.4rem;}
 }
 
-/* ── CARRIER ROWS ──
-   A sliding row per product line, showing the carriers BBB shops.
-   Matt asked for it 2026-09-18, "by section".
 
-   NAMES, NOT LOGOS, and that is deliberate. Carrier logo usage normally needs
-   the carrier's own brand approval and an appointment behind it, which is a
-   real question for a licensed agency rather than a design preference. Names
-   carry the same message and carry no permission risk.
+/* ── CARRIERS PAGE ──
+   A grid of carrier tiles per product line, on its own page. Matt, 2026-09-18:
+   "I want it to only live on there own page. and also include there image."
 
-   The track holds the list TWICE and slides exactly -50%, which is what makes
-   the loop seamless: at the end of the animation the second copy sits exactly
-   where the first started. Duplicating in the markup rather than cloning in JS
-   keeps this working with no script at all. */
-.carriers{background:var(--cream-light);padding:64px 0 70px;border-top:1px solid var(--gray-200);}
-.carriers-head{max-width:1140px;margin:0 auto 34px;padding:0 28px;text-align:center;}
-.carriers-head h2{font-family:var(--font-heading);color:var(--gray-900);font-size:1.6rem;margin-bottom:10px;}
-.carriers-head p{color:var(--gray-700);font-size:15.5px;max-width:620px;margin:0 auto;}
-.carrier-line{margin-bottom:22px;}
-.carrier-line:last-child{margin-bottom:0;}
-.carrier-label{max-width:1140px;margin:0 auto 10px;padding:0 28px;font-size:12px;font-weight:700;letter-spacing:0.09em;text-transform:uppercase;color:var(--maroon);}
-.carrier-viewport{overflow:hidden;position:relative;}
-/* Fade the edges so chips enter and leave rather than being chopped. */
-.carrier-viewport::before,.carrier-viewport::after{content:'';position:absolute;top:0;bottom:0;width:70px;z-index:2;pointer-events:none;}
-.carrier-viewport::before{left:0;background:linear-gradient(to right,var(--cream-light),rgba(250,245,240,0));}
-.carrier-viewport::after{right:0;background:linear-gradient(to left,var(--cream-light),rgba(250,245,240,0));}
-.carrier-track{display:flex;width:max-content;gap:10px;animation:carrier-slide 46s linear infinite;}
-.carrier-line:nth-child(even) .carrier-track{animation-direction:reverse;}
-.carrier-viewport:hover .carrier-track{animation-play-state:paused;}
-.carrier-chip{flex:0 0 auto;background:var(--white);border:1px solid var(--gray-200);border-radius:999px;padding:10px 20px;font-size:14px;font-weight:600;color:var(--gray-900);white-space:nowrap;}
-@keyframes carrier-slide{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+   THE TILE SHOWS A LOGO WHEN ONE EXISTS AND THE NAME WHEN IT DOES NOT, decided
+   at build time by scripts/build-carriers-page.mjs looking in images/carriers/.
+   That is why the page works today with no logo files and upgrades itself the
+   moment any single file is dropped in. Nothing is broken while they arrive.
 
-/* Anybody who has asked their system to stop moving things gets a plain
-   wrapped list instead, with the duplicate copy hidden so nothing reads twice. */
-@media (prefers-reduced-motion:reduce){
-  .carrier-viewport{overflow:visible;}
-  .carrier-viewport::before,.carrier-viewport::after{display:none;}
-  .carrier-track{animation:none;flex-wrap:wrap;width:auto;max-width:1140px;margin:0 auto;padding:0 28px;justify-content:center;}
-  .carrier-track [data-dup="1"]{display:none;}
-}
+   Tiles are a fixed height with the logo contained inside, so carriers whose
+   marks are wide (Blue Cross) and tall (VSP) sit on the same baseline instead
+   of one of them dictating the row height. */
+.carrier-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px;margin-bottom:44px;}
+.carrier-tile{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);height:104px;display:flex;align-items:center;justify-content:center;padding:18px 20px;text-align:center;transition:var(--transition);}
+.carrier-tile:hover{border-color:var(--gray-300);box-shadow:var(--shadow-sm);}
+.carrier-tile img{max-height:52px;max-width:100%;width:auto;object-fit:contain;}
+.carrier-tile span{font-size:14.5px;font-weight:600;color:var(--gray-900);line-height:1.35;}
+.carrier-section{margin-bottom:8px;}
+.carrier-section h2{font-family:var(--font-heading);color:var(--gray-900);font-size:1.4rem;margin-bottom:6px;}
+.carrier-section .carrier-note{color:var(--gray-700);font-size:15px;margin-bottom:20px;}
 @media (max-width:700px){
-  .carriers{padding:52px 0 56px;}
-  .carriers-head h2{font-size:1.4rem;}
-  .carrier-chip{font-size:13px;padding:9px 16px;}
+  .carrier-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;}
+  .carrier-tile{height:88px;padding:14px;}
+  .carrier-tile img{max-height:42px;}
+  .carrier-tile span{font-size:13px;}
 }

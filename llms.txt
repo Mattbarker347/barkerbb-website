@@ -22,6 +22,7 @@ Barker Brothers Benefits is a family-run, independent employee benefits agency b
 ## Key pages
 
 - [Services overview](https://barkerbb.com/services)
+- [Carriers We Work With](https://barkerbb.com/carriers): Every carrier Barker Brothers Benefits shops, grouped by medical, dental, vision, supplemental, life and Minnesota Paid Leave.
 - [Why Barker Brothers Benefits](https://barkerbb.com/why-us)
 - [Our team](https://barkerbb.com/team)
 - [Contact and free quote](https://barkerbb.com/contact)
