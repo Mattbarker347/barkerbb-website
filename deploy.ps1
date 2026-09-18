@@ -77,6 +77,32 @@ if ($stamped -gt 0) {
     Write-Host "[OK] Stylesheet version $cssHash, already current on every page." -ForegroundColor Green
 }
 
+# 3c. Check the site before any of it ships
+#
+# Runs AFTER the stamping above on purpose: one of the things it checks is that
+# every page carries the same stylesheet version, which is only true once 3b has
+# run.
+#
+# This exists because on 2026-09-17 the site had 38 urls renamed, 5 pages added,
+# 325 questions written and the nav rebuilt, and every batch was verified by a
+# one-off script typed into a terminal and then thrown away. Those scripts caught
+# real defects: dead internal links, a page declaring FAQ schema with no visible
+# questions, an em dash in live copy, British spellings in American copy. A check
+# that lives in a terminal history is not a check.
+#
+# It REFUSES the deploy rather than warning, for the same reason step 3b stamps
+# rather than leaving a note: this repo ships through exactly one path, so the
+# guard belongs in that path.
+Write-Host "[..] Checking the site..." -ForegroundColor Yellow
+
+node scripts\site-check.mjs
+if ($LASTEXITCODE -ne 0) {
+    Write-Host ""
+    Write-Host "[STOP] site-check failed. Nothing has been staged, committed or pushed." -ForegroundColor Red
+    Write-Host "       Fix what it listed, then run this again." -ForegroundColor Red
+    exit 1
+}
+
 # 4. Stage the site files, by name
 #
 # This used to be "git add ." That is dangerous here: this repo is PUBLIC and it
@@ -89,7 +115,7 @@ Write-Host "[..] Staging site files..." -ForegroundColor Yellow
 git add -u
 
 # New site files, by explicit path. Add to this list if the site gains a real folder.
-$sitePaths = @('*.html', 'css', 'js', 'images', 'sitemap.xml', 'robots.txt', 'llms.txt', 'CNAME', '*.md', '.gitignore', 'deploy.ps1', 'push.cmd')
+$sitePaths = @('*.html', 'css', 'js', 'images', 'scripts', 'sitemap.xml', 'robots.txt', 'llms.txt', 'CNAME', '*.md', '.gitignore', 'deploy.ps1', 'push.cmd')
 foreach ($p in $sitePaths) {
     if (Test-Path $p) { git add -- $p }
 }
