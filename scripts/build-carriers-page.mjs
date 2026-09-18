@@ -28,13 +28,13 @@ import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 
 const LINES = [
   ['Medical', 'Traditional group medical, level funded plans, and the cooperative alternative.',
-    ['Blue Cross Blue Shield of Minnesota', 'HealthPartners', 'Medica', 'UnitedHealthcare', 'Aetna', 'Cigna', 'Allstate Benefits', 'National General', 'Health Access Solutions']],
+    ['Blue Cross Blue Shield of Minnesota', 'HealthPartners', 'Medica', 'UnitedHealthcare', 'Aetna', 'Cigna', 'Allstate Benefits', 'Health Access Solutions']],
   ['Dental', 'Group and voluntary dental, from the large Minnesota networks to the newer carriers.',
-    ['Delta Dental of Minnesota', 'Beam Benefits', 'Aflac', 'HealthPartners', 'Blue Cross Blue Shield of Minnesota', 'UnitedHealthcare', 'Principal', 'Guardian', 'Mutual of Omaha', 'MetLife', 'Ameritas', 'Cigna']],
+    ['Delta Dental of Minnesota', 'Beam Benefits', 'Aflac', 'HealthPartners', 'Blue Cross Blue Shield of Minnesota', 'UnitedHealthcare', 'Principal', 'Guardian', 'Mutual of Omaha', 'MetLife', 'Cigna']],
   ['Vision', 'Group and voluntary vision, including the vision-only carriers most employers ask for by name.',
     ['VSP', 'EyeMed', 'Beam Benefits', 'Aflac', 'Blue Cross Blue Shield of Minnesota', 'UnitedHealthcare', 'MetLife', 'Principal', 'Guardian', 'HealthPartners', 'Unum', 'XP Health']],
   ['Supplemental', 'Accident, critical illness, hospital indemnity, and short and long term disability.',
-    ['Aflac', 'Beam Benefits', 'Colonial Life', 'Allstate Benefits', 'MetLife', 'Mutual of Omaha', 'Principal', 'Unum', 'Transamerica', 'Combined Insurance', 'The Hartford', 'Sun Life', 'Lincoln Financial', 'The Standard', 'Reliance Matrix']],
+    ['Aflac', 'Beam Benefits', 'MetLife', 'Mutual of Omaha', 'Principal', 'Unum', 'Transamerica', 'The Hartford', 'Sun Life', 'Lincoln Financial', 'The Standard', 'Reliance Matrix']],
   ['Life', 'Employer paid basic life and voluntary term life.',
     ['Aflac', 'Beam Benefits', 'Mutual of Omaha', 'Principal', 'The Hartford', 'Sun Life', 'MetLife', 'Lincoln Financial', 'Unum', 'The Standard']],
   ['Minnesota Paid Leave', 'Private plan options for Minnesota Paid Family and Medical Leave.',
