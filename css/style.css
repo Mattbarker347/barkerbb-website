@@ -424,9 +424,21 @@ a:hover{color:var(--maroon-light);}
    marks are wide (Blue Cross) and tall (VSP) sit on the same baseline instead
    of one of them dictating the row height. */
 .carrier-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:16px;margin-bottom:44px;}
-.carrier-tile{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);height:104px;display:flex;align-items:center;justify-content:center;padding:18px 20px;text-align:center;transition:var(--transition);}
+.carrier-tile{overflow:hidden;background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius);height:104px;display:flex;align-items:center;justify-content:center;padding:18px 20px;text-align:center;transition:var(--transition);}
 .carrier-tile:hover{border-color:var(--gray-300);box-shadow:var(--shadow-sm);}
-.carrier-tile img{max-height:52px;max-width:100%;width:auto;object-fit:contain;}
+/* min-width:0 matters: an <img> is a flex item whose default min-width is auto,
+   which resolves to its INTRINSIC width and refuses to shrink, so a wide logo
+   like Sun Life overflowed its tile and got clipped to "Sun Lif" even with
+   max-width:100% set. overflow:hidden on the tile is the belt to that braces. */
+.carrier-tile img{max-height:52px;max-width:100%;min-width:0;width:auto;object-fit:contain;}
+/* Shape classes are assigned at BUILD time by scripts/build-carriers-page.mjs,
+   which reads each file s real dimensions, because CSS cannot see an image s
+   intrinsic ratio before it loads. A square logo is usually a square CANVAS
+   with the mark floating in baked-in white padding, so it needs more height to
+   reach the same visual weight as a wide wordmark. Without this, Reliance
+   Matrix and Guardian rendered as specks next to Aflac. */
+.carrier-tile--square img{max-height:70px;}
+.carrier-tile--wide img{max-height:44px;max-width:94%;}
 .carrier-tile span{font-size:14.5px;font-weight:600;color:var(--gray-900);line-height:1.35;}
 .carrier-section{margin-bottom:8px;}
 .carrier-section h2{font-family:var(--font-heading);color:var(--gray-900);font-size:1.4rem;margin-bottom:6px;}
@@ -435,5 +447,7 @@ a:hover{color:var(--maroon-light);}
   .carrier-grid{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:12px;}
   .carrier-tile{height:88px;padding:14px;}
   .carrier-tile img{max-height:42px;}
+  .carrier-tile--square img{max-height:58px;}
+  .carrier-tile--wide img{max-height:36px;}
   .carrier-tile span{font-size:13px;}
 }

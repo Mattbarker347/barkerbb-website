@@ -51,6 +51,45 @@ function logoFor(name) {
   return null;
 }
 
+
+/**
+ * Read real dimensions out of the PNG or JPEG header.
+ *
+ * WHY THE PAGE NEEDS THIS. These logos arrive at wildly different aspect
+ * ratios: Sun Life is 3.5 times wider than tall, Reliance Matrix and Guardian
+ * are perfect squares with heavy white padding baked in. One max-height for
+ * all of them makes the square ones render as a tiny mark floating in a big
+ * tile, which is what the first build looked like. Classifying by aspect and
+ * sizing each class separately is the fix, and it has to happen here because
+ * CSS cannot see an image's intrinsic ratio before it loads.
+ */
+function dims(buf) {
+  if (buf.length > 24 && buf.slice(0, 8).equals(Buffer.from([0x89,0x50,0x4e,0x47,0x0d,0x0a,0x1a,0x0a]))) {
+    return { w: buf.readUInt32BE(16), h: buf.readUInt32BE(20) };
+  }
+  if (buf[0] === 0xff && buf[1] === 0xd8) {
+    let i = 2;
+    while (i < buf.length - 9) {
+      if (buf[i] !== 0xff) { i++; continue; }
+      const m = buf[i + 1];
+      if (m >= 0xc0 && m <= 0xcf && m !== 0xc4 && m !== 0xc8 && m !== 0xcc) {
+        return { h: buf.readUInt16BE(i + 5), w: buf.readUInt16BE(i + 7) };
+      }
+      i += 2 + buf.readUInt16BE(i + 2);
+    }
+  }
+  return null;
+}
+
+function shapeClass(path) {
+  const d = dims(readFileSync(path));
+  if (!d) return '';
+  const ratio = d.w / d.h;
+  if (ratio >= 2.6) return ' carrier-tile--wide';
+  if (ratio <= 1.5) return ' carrier-tile--square';
+  return '';
+}
+
 const donor = readFileSync('services.html', 'utf8');
 const grab = (re, what) => { const m = donor.match(re); if (!m) throw new Error(`could not read ${what}`); return m[0]; };
 const nav = grab(/<nav class="nav"[\s\S]*?<\/nav>/, 'nav');
@@ -65,7 +104,7 @@ const missing = [];
 const sections = LINES.map(([label, note, names]) => {
   const tiles = names.map((n) => {
     const logo = logoFor(n);
-    if (logo) { withLogo++; return `        <div class="carrier-tile"><img src="${logo}" alt="${esc(n)}" loading="lazy"/></div>`; }
+    if (logo) { withLogo++; return `        <div class="carrier-tile${shapeClass(logo)}"><img src="${logo}" alt="${esc(n)}" loading="lazy"/></div>`; }
     withoutLogo++; missing.push(slug(n));
     return `        <div class="carrier-tile"><span>${esc(n)}</span></div>`;
   }).join('\n');
