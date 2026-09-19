@@ -28,7 +28,7 @@ import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 
 const LINES = [
   ['Medical', 'Traditional group medical, level funded plans, and the cooperative alternative.',
-    ['Blue Cross Blue Shield of Minnesota', 'HealthPartners', 'Medica', 'UnitedHealthcare', 'Aetna', 'Cigna', 'Allstate Benefits', 'Health Access Solutions']],
+    ['Blue Cross Blue Shield of Minnesota', 'HealthPartners', 'Medica', 'UnitedHealthcare', 'Aetna', 'Cigna', 'Quartz', 'Allstate Benefits', 'Health Access Solutions']],
   ['Dental', 'Group and voluntary dental, from the large Minnesota networks to the newer carriers.',
     ['Delta Dental of Minnesota', 'Beam Benefits', 'Aflac', 'HealthPartners', 'Blue Cross Blue Shield of Minnesota', 'UnitedHealthcare', 'Principal', 'Guardian', 'Mutual of Omaha', 'MetLife', 'Cigna']],
   ['Vision', 'Group and voluntary vision, including the vision-only carriers most employers ask for by name.',
