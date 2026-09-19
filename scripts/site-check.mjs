@@ -23,7 +23,31 @@ const failures = [];
 const notes = [];
 const fail = (check, detail) => failures.push(`${check}: ${detail}`);
 
-const pages = readdirSync(".").filter((f) => f.endsWith(".html"));
+/**
+ * Walk for pages, SUBDIRECTORIES INCLUDED.
+ *
+ * This used to be readdirSync(".") and root only. That was fine while every
+ * page sat at the root, and it silently stopped being fine the moment
+ * /glossary/<term> pages arrived: they would have been invisible to every
+ * check below, and the sitemap check would have failed them as "not a page on
+ * disk" while the pages sat right there. A guard's scope is a blind spot
+ * shaped exactly like what it skips.
+ *
+ * Asset folders are excluded because they hold no pages, and a stray .html in
+ * css/ or images/ is not something the site serves as a page.
+ */
+const SKIP = new Set(["images", "css", "js", "node_modules", ".git", "scripts"]);
+function walk(dir, out = []) {
+  for (const e of readdirSync(dir, { withFileTypes: true })) {
+    if (e.name.startsWith(".") || SKIP.has(e.name)) continue;
+    const rel = dir === "." ? e.name : `${dir}/${e.name}`;
+    if (e.isDirectory()) walk(rel, out);
+    else if (e.name.endsWith(".html")) out.push(rel);
+  }
+  return out;
+}
+
+const pages = walk(".");
 const slugs = new Set(pages.map((f) => f.replace(/\.html$/, "")));
 const src = Object.fromEntries(pages.map((f) => [f, readFileSync(f, "utf8")]));
 

@@ -61,10 +61,19 @@ $cssHash = $cssHash.Substring(0, 8).ToLower()
 $utf8NoBom = New-Object System.Text.UTF8Encoding $false
 $stamped = 0
 
-foreach ($page in Get-ChildItem -Path . -Filter *.html -Name) {
+# -Recurse added 2026-09-19 with the /glossary pages. Without it this walked the
+# root only, so nested pages kept a stale hash forever while the root pages moved
+# on, and site-check would then refuse every deploy for a css stamp mismatch the
+# stamper itself could not fix.
+#
+# The regex allows an OPTIONAL LEADING SLASH for the same reason. A page at
+# /glossary/<term> cannot use a relative "css/style.css", that resolves to
+# /glossary/css/style.css and 404s, so nested pages reference "/css/style.css".
+# The capture group puts back whichever form the page already used.
+foreach ($page in Get-ChildItem -Path . -Recurse -File -Filter *.html -Name) {
     $full = Join-Path $PSScriptRoot $page
     $html = [System.IO.File]::ReadAllText($full)
-    $updated = [regex]::Replace($html, 'href="css/style\.css(\?v=[0-9a-f]+)?"', "href=`"css/style.css?v=$cssHash`"")
+    $updated = [regex]::Replace($html, 'href="(/?)css/style\.css(\?v=[0-9a-f]+)?"', "href=`"`${1}css/style.css?v=$cssHash`"")
     if ($updated -ne $html) {
         [System.IO.File]::WriteAllText($full, $updated, $utf8NoBom)
         $stamped++
@@ -115,7 +124,7 @@ Write-Host "[..] Staging site files..." -ForegroundColor Yellow
 git add -u
 
 # New site files, by explicit path. Add to this list if the site gains a real folder.
-$sitePaths = @('*.html', 'css', 'js', 'images', 'scripts', 'sitemap.xml', 'robots.txt', 'llms.txt', 'CNAME', '*.md', '.gitignore', 'deploy.ps1', 'push.cmd')
+$sitePaths = @('*.html', 'glossary', 'css', 'js', 'images', 'scripts', 'sitemap.xml', 'robots.txt', 'llms.txt', 'CNAME', '*.md', '.gitignore', 'deploy.ps1', 'push.cmd')
 foreach ($p in $sitePaths) {
     if (Test-Path $p) { git add -- $p }
 }

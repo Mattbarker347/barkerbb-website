@@ -36,6 +36,7 @@ Every guide below is grouped under one of these five hubs. Start here for the fu
 - [Coverage and Carriers](https://barkerbb.com/coverage): Guides to every line of group coverage we place, from medical and dental to life, vision, ICHRA, and Aflac supplemental, plus the Minnesota carriers we quote.
 - [Comparisons](https://barkerbb.com/comparisons): Side by side comparisons of the decisions Minnesota employers actually face: PPO vs HMO, level funded vs fully insured, ICHRA vs group, term vs whole life, and more.
 - [Answers](https://barkerbb.com/answers): Straight answers to the questions Minnesota employers ask us most, on ACA compliance, mid-year changes, participation rates, Section 125, SPDs, HRAs and HSAs, and open enrollment.
+- [Employee Benefits Glossary](https://barkerbb.com/glossary): Plain-English definitions of 42 employee benefits terms for Minnesota employers, each on its own page at /glossary/<term>.
 
 <!-- guides:start -->
 
